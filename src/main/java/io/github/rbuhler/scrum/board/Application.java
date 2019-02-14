@@ -19,7 +19,7 @@ public class Application {
 		RestTemplate restTemplate = new RestTemplate();
 
 		String url = "https://github.wdf.sap.corp/api/v3/user/orgs";
-		String token = "9231f3b43ac0baf85e2adaf7c7ac60b3d30d32e4";
+		String token = "";
 
 		//setting the headers
 		HttpHeaders headers = new HttpHeaders();
