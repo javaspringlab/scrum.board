@@ -2,12 +2,13 @@ package io.github.rbuhler.scrum.board;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
 import github.model.Body;
-import github.model.Authorization;
 import github.model.Organization;
 import org.springframework.http.HttpEntity;
 import org.springframework.http.HttpHeaders;
 import org.springframework.http.HttpMethod;
-import org.springframework.web.bind.annotation.*;
+import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.client.RestTemplate;
 
 import java.io.IOException;
@@ -16,14 +17,11 @@ import java.io.IOException;
 public class OrganizationController {
 
     @RequestMapping("/gitOrg")
-    public Organization organization(@RequestBody Body body,
-									 @RequestHeader Authorization authorization,
-									 @RequestParam(value="org") String org){
+	  public Organization organization(@RequestBody Body body){
 
 		RestTemplate restTemplate = new RestTemplate();
         ObjectMapper mapper = new ObjectMapper();
-
-		String url = "https://api.github.com/orgs/" + org;
+		String url = "https://api.github.com/orgs/" + body.getOrg();
 
 		//setting the headers
 		HttpHeaders headers = new HttpHeaders();
@@ -34,7 +32,6 @@ public class OrganizationController {
         //retrieving the response
 		String jsonData = response.getBody();
 		Organization orgData = null;
-
 		try {
 			orgData = mapper.readValue(jsonData, Organization.class);
 		} catch (IOException e) {
@@ -42,12 +39,6 @@ public class OrganizationController {
 				e.printStackTrace();
 			System.out.println("\n");
 		}
-
-		System.out.println("\n");
-		System.out.println("body : "+ body.getBasic() +"\n");
-		System.out.println("header : "+ authorization.getAuthorization() +"\n");
-		System.out.println("\n");
-
         return orgData;
     }
 }
