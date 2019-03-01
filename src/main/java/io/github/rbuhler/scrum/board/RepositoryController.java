@@ -1,7 +1,7 @@
 package io.github.rbuhler.scrum.board;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
-import github.model.Repo;
+import github.model.Repository;
 import org.springframework.http.HttpEntity;
 import org.springframework.http.HttpHeaders;
 import org.springframework.http.HttpMethod;
@@ -14,17 +14,17 @@ import org.springframework.web.client.RestTemplate;
 import java.io.IOException;
 
 @RestController
-public class RepoController {
+public class RepositoryController {
 
     @RequestMapping("/gitRepo")
-    public Repo[] repo(@RequestHeader (value="Authorization") String auth,
-                       @RequestParam (value="org") String org,
-                       @RequestParam (value="repo") String repo){
+    public Repository[] repo(@RequestHeader (value="Authorization") String auth,
+                             @RequestParam (value="org") String org,
+                             @RequestParam (value="repo") String repo){
 
         RestTemplate restTemplate = new RestTemplate();
         ObjectMapper mapper = new ObjectMapper();
-        String url = "https://api.github.com/orgs/" + org + "/repos?name=" + repo;
-        System.out.println("\n" + url + "\n");
+        String url = "https://api.github.com/repos/" + org + "/" + repo;
+        System.out.println("URL: "+ url);
 
         //setting the headers
         HttpHeaders headers = new HttpHeaders();
@@ -37,13 +37,13 @@ public class RepoController {
 
         System.out.println("\n"+ jsonData + "\n");
 
-        Repo[] repoDataList = null;
+        Repository[] repositoryDataList = null;
         try {
-            repoDataList = mapper.readValue(jsonData, Repo[].class);
+            repositoryDataList = mapper.readValue(jsonData, Repository[].class);
 
         } catch (IOException e) {
             e.printStackTrace();
         }
-        return repoDataList;
+        return repositoryDataList;
     }
 }

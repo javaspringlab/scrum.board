@@ -22,7 +22,7 @@ import com.fasterxml.jackson.annotation.JsonPropertyOrder;
         "following_url",
         "gists_url",
         "starred_url",
-        "subscriptio\r\nns_url",
+        "subscriptions_url",
         "organizations_url",
         "repos_url",
         "events_url",
@@ -54,8 +54,8 @@ public class Owner {
     private String gistsUrl;
     @JsonProperty("starred_url")
     private String starredUrl;
-    @JsonProperty("subscriptio\r\nns_url")
-    private String subscriptioNsUrl;
+    @JsonProperty("subscriptions_url")
+    private String subscriptionsUrl;
     @JsonProperty("organizations_url")
     private String organizationsUrl;
     @JsonProperty("repos_url")
@@ -80,13 +80,13 @@ public class Owner {
 
     /**
      *
-     * @param subscriptioNsUrl
      * @param eventsUrl
      * @param siteAdmin
      * @param gistsUrl
      * @param type
      * @param gravatarId
      * @param url
+     * @param subscriptionsUrl
      * @param id
      * @param followersUrl
      * @param reposUrl
@@ -99,7 +99,7 @@ public class Owner {
      * @param login
      * @param starredUrl
      */
-    public Owner(String login, int id, String nodeId, String avatarUrl, String gravatarId, String url, String htmlUrl, String followersUrl, String followingUrl, String gistsUrl, String starredUrl, String subscriptioNsUrl, String organizationsUrl, String reposUrl, String eventsUrl, String receivedEventsUrl, String type, boolean siteAdmin) {
+    public Owner(String login, int id, String nodeId, String avatarUrl, String gravatarId, String url, String htmlUrl, String followersUrl, String followingUrl, String gistsUrl, String starredUrl, String subscriptionsUrl, String organizationsUrl, String reposUrl, String eventsUrl, String receivedEventsUrl, String type, boolean siteAdmin) {
         super();
         this.login = login;
         this.id = id;
@@ -112,7 +112,7 @@ public class Owner {
         this.followingUrl = followingUrl;
         this.gistsUrl = gistsUrl;
         this.starredUrl = starredUrl;
-        this.subscriptioNsUrl = subscriptioNsUrl;
+        this.subscriptionsUrl = subscriptionsUrl;
         this.organizationsUrl = organizationsUrl;
         this.reposUrl = reposUrl;
         this.eventsUrl = eventsUrl;
@@ -231,14 +231,14 @@ public class Owner {
         this.starredUrl = starredUrl;
     }
 
-    @JsonProperty("subscriptio\r\nns_url")
-    public String getSubscriptioNsUrl() {
-        return subscriptioNsUrl;
+    @JsonProperty("subscriptions_url")
+    public String getSubscriptionsUrl() {
+        return subscriptionsUrl;
     }
 
-    @JsonProperty("subscriptio\r\nns_url")
-    public void setSubscriptioNsUrl(String subscriptioNsUrl) {
-        this.subscriptioNsUrl = subscriptioNsUrl;
+    @JsonProperty("subscriptions_url")
+    public void setSubscriptionsUrl(String subscriptionsUrl) {
+        this.subscriptionsUrl = subscriptionsUrl;
     }
 
     @JsonProperty("organizations_url")

@@ -27,7 +27,7 @@ import com.fasterxml.jackson.annotation.JsonPropertyOrder;
         "teams_url",
         "hooks_url",
         "issue_events_url",
-        "events_\r\nurl",
+        "events_url",
         "assignees_url",
         "branches_url",
         "tags_url",
@@ -40,13 +40,13 @@ import com.fasterxml.jackson.annotation.JsonPropertyOrder;
         "stargazers_url",
         "contributors_url",
         "subscribers_url",
-        "subscr\r\niption_url",
+        "subscription_url",
         "commits_url",
         "git_commits_url",
         "comments_url",
-        "issue_comment_url\r\n",
+        "issue_comment_url",
         "contents_url",
-        "compare_ur\r\nl",
+        "compare_url",
         "merges_url",
         "archive_url",
         "downloads_url",
@@ -83,9 +83,15 @@ import com.fasterxml.jackson.annotation.JsonPropertyOrder;
         "open_issues",
         "watchers",
         "default_branch",
-        "permis\r\nsions"
+        "permissions",
+        "allow_squash_merge",
+        "allow_merge_commit",
+        "allow_rebase_merge",
+        "organization",
+        "network_count",
+        "subscribers_count"
 })
-public class Repo {
+public class Repository {
 
     @JsonProperty("id")
     private int id;
@@ -119,7 +125,7 @@ public class Repo {
     private String hooksUrl;
     @JsonProperty("issue_events_url")
     private String issueEventsUrl;
-    @JsonProperty("events_\r\nurl")
+    @JsonProperty("events_url")
     private String eventsUrl;
     @JsonProperty("assignees_url")
     private String assigneesUrl;
@@ -145,20 +151,20 @@ public class Repo {
     private String contributorsUrl;
     @JsonProperty("subscribers_url")
     private String subscribersUrl;
-    @JsonProperty("subscr\r\niption_url")
-    private String subscrIptionUrl;
+    @JsonProperty("subscription_url")
+    private String subscriptionUrl;
     @JsonProperty("commits_url")
     private String commitsUrl;
     @JsonProperty("git_commits_url")
     private String gitCommitsUrl;
     @JsonProperty("comments_url")
     private String commentsUrl;
-    @JsonProperty("issue_comment_url\r\n")
+    @JsonProperty("issue_comment_url")
     private String issueCommentUrl;
     @JsonProperty("contents_url")
     private String contentsUrl;
-    @JsonProperty("compare_ur\r\nl")
-    private String compareUrL;
+    @JsonProperty("compare_url")
+    private String compareUrl;
     @JsonProperty("merges_url")
     private String mergesUrl;
     @JsonProperty("archive_url")
@@ -231,8 +237,20 @@ public class Repo {
     private int watchers;
     @JsonProperty("default_branch")
     private String defaultBranch;
-    @JsonProperty("permis\r\nsions")
-    private PermisSions permisSions;
+    @JsonProperty("permissions")
+    private Permissions permissions;
+    @JsonProperty("allow_squash_merge")
+    private boolean allowSquashMerge;
+    @JsonProperty("allow_merge_commit")
+    private boolean allowMergeCommit;
+    @JsonProperty("allow_rebase_merge")
+    private boolean allowRebaseMerge;
+    @JsonProperty("organization")
+    private Organization organization;
+    @JsonProperty("network_count")
+    private int networkCount;
+    @JsonProperty("subscribers_count")
+    private int subscribersCount;
     @JsonIgnore
     private Map<String, Object> additionalProperties = new HashMap<String, Object>();
 
@@ -240,7 +258,7 @@ public class Repo {
      * No args constructor for use in serialization
      *
      */
-    public Repo() {
+    public Repository() {
     }
 
     /**
@@ -250,22 +268,26 @@ public class Repo {
      * @param pushedAt
      * @param gitTagsUrl
      * @param contentsUrl
+     * @param subscribersCount
      * @param blobsUrl
+     * @param allowMergeCommit
      * @param issueEventsUrl
      * @param nodeId
      * @param htmlUrl
-     * @param permisSions
      * @param _private
      * @param hooksUrl
      * @param description
      * @param commentsUrl
      * @param commitsUrl
+     * @param permissions
      * @param labelsUrl
      * @param assigneesUrl
      * @param mergesUrl
      * @param fork
+     * @param compareUrl
      * @param stargazersUrl
      * @param gitRefsUrl
+     * @param networkCount
      * @param deploymentsUrl
      * @param watchersCount
      * @param openIssuesCount
@@ -288,11 +310,11 @@ public class Repo {
      * @param openIssues
      * @param teamsUrl
      * @param sshUrl
-     * @param compareUrL
      * @param contributorsUrl
      * @param stargazersCount
      * @param tagsUrl
      * @param id
+     * @param organization
      * @param hasIssues
      * @param archived
      * @param createdAt
@@ -302,15 +324,17 @@ public class Repo {
      * @param issuesUrl
      * @param license
      * @param gitUrl
-     * @param subscrIptionUrl
      * @param forksCount
      * @param watchers
+     * @param subscriptionUrl
+     * @param allowSquashMerge
      * @param svnUrl
      * @param archiveUrl
      * @param hasPages
      * @param languagesUrl
      * @param updatedAt
      * @param collaboratorsUrl
+     * @param allowRebaseMerge
      * @param forks
      * @param hasDownloads
      * @param subscribersUrl
@@ -319,7 +343,7 @@ public class Repo {
      * @param hasWiki
      * @param defaultBranch
      */
-    public Repo(int id, String nodeId, String name, String fullName, boolean _private, Owner owner, String htmlUrl, String description, boolean fork, String url, String forksUrl, String keysUrl, String collaboratorsUrl, String teamsUrl, String hooksUrl, String issueEventsUrl, String eventsUrl, String assigneesUrl, String branchesUrl, String tagsUrl, String blobsUrl, String gitTagsUrl, String gitRefsUrl, String treesUrl, String statusesUrl, String languagesUrl, String stargazersUrl, String contributorsUrl, String subscribersUrl, String subscrIptionUrl, String commitsUrl, String gitCommitsUrl, String commentsUrl, String issueCommentUrl, String contentsUrl, String compareUrL, String mergesUrl, String archiveUrl, String downloadsUrl, String issuesUrl, String pullsUrl, String milestonesUrl, String notificationsUrl, String labelsUrl, String releasesUrl, String deploymentsUrl, String createdAt, String updatedAt, String pushedAt, String gitUrl, String sshUrl, String cloneUrl, String svnUrl, Object homepage, int size, int stargazersCount, int watchersCount, String language, boolean hasIssues, boolean hasProjects, boolean hasDownloads, boolean hasWiki, boolean hasPages, int forksCount, Object mirrorUrl, boolean archived, int openIssuesCount, Object license, int forks, int openIssues, int watchers, String defaultBranch, PermisSions permisSions) {
+    public Repository(int id, String nodeId, String name, String fullName, boolean _private, Owner owner, String htmlUrl, String description, boolean fork, String url, String forksUrl, String keysUrl, String collaboratorsUrl, String teamsUrl, String hooksUrl, String issueEventsUrl, String eventsUrl, String assigneesUrl, String branchesUrl, String tagsUrl, String blobsUrl, String gitTagsUrl, String gitRefsUrl, String treesUrl, String statusesUrl, String languagesUrl, String stargazersUrl, String contributorsUrl, String subscribersUrl, String subscriptionUrl, String commitsUrl, String gitCommitsUrl, String commentsUrl, String issueCommentUrl, String contentsUrl, String compareUrl, String mergesUrl, String archiveUrl, String downloadsUrl, String issuesUrl, String pullsUrl, String milestonesUrl, String notificationsUrl, String labelsUrl, String releasesUrl, String deploymentsUrl, String createdAt, String updatedAt, String pushedAt, String gitUrl, String sshUrl, String cloneUrl, String svnUrl, Object homepage, int size, int stargazersCount, int watchersCount, String language, boolean hasIssues, boolean hasProjects, boolean hasDownloads, boolean hasWiki, boolean hasPages, int forksCount, Object mirrorUrl, boolean archived, int openIssuesCount, Object license, int forks, int openIssues, int watchers, String defaultBranch, Permissions permissions, boolean allowSquashMerge, boolean allowMergeCommit, boolean allowRebaseMerge, Organization organization, int networkCount, int subscribersCount) {
         super();
         this.id = id;
         this.nodeId = nodeId;
@@ -350,13 +374,13 @@ public class Repo {
         this.stargazersUrl = stargazersUrl;
         this.contributorsUrl = contributorsUrl;
         this.subscribersUrl = subscribersUrl;
-        this.subscrIptionUrl = subscrIptionUrl;
+        this.subscriptionUrl = subscriptionUrl;
         this.commitsUrl = commitsUrl;
         this.gitCommitsUrl = gitCommitsUrl;
         this.commentsUrl = commentsUrl;
         this.issueCommentUrl = issueCommentUrl;
         this.contentsUrl = contentsUrl;
-        this.compareUrL = compareUrL;
+        this.compareUrl = compareUrl;
         this.mergesUrl = mergesUrl;
         this.archiveUrl = archiveUrl;
         this.downloadsUrl = downloadsUrl;
@@ -393,7 +417,13 @@ public class Repo {
         this.openIssues = openIssues;
         this.watchers = watchers;
         this.defaultBranch = defaultBranch;
-        this.permisSions = permisSions;
+        this.permissions = permissions;
+        this.allowSquashMerge = allowSquashMerge;
+        this.allowMergeCommit = allowMergeCommit;
+        this.allowRebaseMerge = allowRebaseMerge;
+        this.organization = organization;
+        this.networkCount = networkCount;
+        this.subscribersCount = subscribersCount;
     }
 
     @JsonProperty("id")
@@ -556,12 +586,12 @@ public class Repo {
         this.issueEventsUrl = issueEventsUrl;
     }
 
-    @JsonProperty("events_\r\nurl")
+    @JsonProperty("events_url")
     public String getEventsUrl() {
         return eventsUrl;
     }
 
-    @JsonProperty("events_\r\nurl")
+    @JsonProperty("events_url")
     public void setEventsUrl(String eventsUrl) {
         this.eventsUrl = eventsUrl;
     }
@@ -686,14 +716,14 @@ public class Repo {
         this.subscribersUrl = subscribersUrl;
     }
 
-    @JsonProperty("subscr\r\niption_url")
-    public String getSubscrIptionUrl() {
-        return subscrIptionUrl;
+    @JsonProperty("subscription_url")
+    public String getSubscriptionUrl() {
+        return subscriptionUrl;
     }
 
-    @JsonProperty("subscr\r\niption_url")
-    public void setSubscrIptionUrl(String subscrIptionUrl) {
-        this.subscrIptionUrl = subscrIptionUrl;
+    @JsonProperty("subscription_url")
+    public void setSubscriptionUrl(String subscriptionUrl) {
+        this.subscriptionUrl = subscriptionUrl;
     }
 
     @JsonProperty("commits_url")
@@ -726,12 +756,12 @@ public class Repo {
         this.commentsUrl = commentsUrl;
     }
 
-    @JsonProperty("issue_comment_url\r\n")
+    @JsonProperty("issue_comment_url")
     public String getIssueCommentUrl() {
         return issueCommentUrl;
     }
 
-    @JsonProperty("issue_comment_url\r\n")
+    @JsonProperty("issue_comment_url")
     public void setIssueCommentUrl(String issueCommentUrl) {
         this.issueCommentUrl = issueCommentUrl;
     }
@@ -746,14 +776,14 @@ public class Repo {
         this.contentsUrl = contentsUrl;
     }
 
-    @JsonProperty("compare_ur\r\nl")
-    public String getCompareUrL() {
-        return compareUrL;
+    @JsonProperty("compare_url")
+    public String getCompareUrl() {
+        return compareUrl;
     }
 
-    @JsonProperty("compare_ur\r\nl")
-    public void setCompareUrL(String compareUrL) {
-        this.compareUrL = compareUrL;
+    @JsonProperty("compare_url")
+    public void setCompareUrl(String compareUrl) {
+        this.compareUrl = compareUrl;
     }
 
     @JsonProperty("merges_url")
@@ -1116,14 +1146,74 @@ public class Repo {
         this.defaultBranch = defaultBranch;
     }
 
-    @JsonProperty("permis\r\nsions")
-    public PermisSions getPermisSions() {
-        return permisSions;
+    @JsonProperty("permissions")
+    public Permissions getPermissions() {
+        return permissions;
     }
 
-    @JsonProperty("permis\r\nsions")
-    public void setPermisSions(PermisSions permisSions) {
-        this.permisSions = permisSions;
+    @JsonProperty("permissions")
+    public void setPermissions(Permissions permissions) {
+        this.permissions = permissions;
+    }
+
+    @JsonProperty("allow_squash_merge")
+    public boolean isAllowSquashMerge() {
+        return allowSquashMerge;
+    }
+
+    @JsonProperty("allow_squash_merge")
+    public void setAllowSquashMerge(boolean allowSquashMerge) {
+        this.allowSquashMerge = allowSquashMerge;
+    }
+
+    @JsonProperty("allow_merge_commit")
+    public boolean isAllowMergeCommit() {
+        return allowMergeCommit;
+    }
+
+    @JsonProperty("allow_merge_commit")
+    public void setAllowMergeCommit(boolean allowMergeCommit) {
+        this.allowMergeCommit = allowMergeCommit;
+    }
+
+    @JsonProperty("allow_rebase_merge")
+    public boolean isAllowRebaseMerge() {
+        return allowRebaseMerge;
+    }
+
+    @JsonProperty("allow_rebase_merge")
+    public void setAllowRebaseMerge(boolean allowRebaseMerge) {
+        this.allowRebaseMerge = allowRebaseMerge;
+    }
+
+    @JsonProperty("organization")
+    public Organization getOrganization() {
+        return organization;
+    }
+
+    @JsonProperty("organization")
+    public void setOrganization(Organization organization) {
+        this.organization = organization;
+    }
+
+    @JsonProperty("network_count")
+    public int getNetworkCount() {
+        return networkCount;
+    }
+
+    @JsonProperty("network_count")
+    public void setNetworkCount(int networkCount) {
+        this.networkCount = networkCount;
+    }
+
+    @JsonProperty("subscribers_count")
+    public int getSubscribersCount() {
+        return subscribersCount;
+    }
+
+    @JsonProperty("subscribers_count")
+    public void setSubscribersCount(int subscribersCount) {
+        this.subscribersCount = subscribersCount;
     }
 
     @JsonAnyGetter

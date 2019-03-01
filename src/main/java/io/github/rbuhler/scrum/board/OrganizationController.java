@@ -14,7 +14,8 @@ import java.io.IOException;
 public class OrganizationController {
 
     @RequestMapping("/gitOrg")
-	  public Organization organization(@RequestHeader (value="Authorization") String auth, @RequestParam (value="org") String org){
+	  public Organization organization(@RequestHeader (value="Authorization") String auth,
+									   @RequestParam (value="org") String org){
 
 		RestTemplate restTemplate = new RestTemplate();
         ObjectMapper mapper = new ObjectMapper();

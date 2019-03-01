@@ -15,7 +15,7 @@ import com.fasterxml.jackson.annotation.JsonPropertyOrder;
         "push",
         "pull"
 })
-public class PermisSions {
+public class Permissions {
 
     @JsonProperty("admin")
     private boolean admin;
@@ -30,7 +30,7 @@ public class PermisSions {
      * No args constructor for use in serialization
      *
      */
-    public PermisSions() {
+    public Permissions() {
     }
 
     /**
@@ -39,7 +39,7 @@ public class PermisSions {
      * @param admin
      * @param push
      */
-    public PermisSions(boolean admin, boolean push, boolean pull) {
+    public Permissions(boolean admin, boolean push, boolean pull) {
         super();
         this.admin = admin;
         this.push = push;
