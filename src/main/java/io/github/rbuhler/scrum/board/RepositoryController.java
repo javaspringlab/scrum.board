@@ -1,7 +1,7 @@
 package io.github.rbuhler.scrum.board;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
-import github.model.Repository;
+import model.github.Repository;
 import org.springframework.http.HttpEntity;
 import org.springframework.http.HttpHeaders;
 import org.springframework.http.HttpMethod;
@@ -17,7 +17,7 @@ import java.io.IOException;
 public class RepositoryController {
 
     @RequestMapping("/gitRepo")
-    public Repository[] repo(@RequestHeader (value="Authorization") String auth,
+    public Repository repo(@RequestHeader (value="Authorization") String auth,
                              @RequestParam (value="org") String org,
                              @RequestParam (value="repo") String repo){
 
@@ -37,13 +37,13 @@ public class RepositoryController {
 
         System.out.println("\n"+ jsonData + "\n");
 
-        Repository[] repositoryDataList = null;
+        Repository repositoryData = null;
         try {
-            repositoryDataList = mapper.readValue(jsonData, Repository[].class);
+            repositoryData = mapper.readValue(jsonData, Repository.class);
 
         } catch (IOException e) {
             e.printStackTrace();
         }
-        return repositoryDataList;
+        return repositoryData;
     }
 }

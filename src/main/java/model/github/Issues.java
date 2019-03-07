@@ -1,4 +1,4 @@
-package github.model;
+package model.github;
 
 import java.util.HashMap;
 import java.util.List;
@@ -70,7 +70,7 @@ public class Issues {
     @JsonProperty("assignee")
     private Assignee assignee;
     @JsonProperty("assignees")
-    private List<Assignee_> assignees = null;
+    private List<Assignee> assignees = null;
     @JsonProperty("milestone")
     private Object milestone;
     @JsonProperty("comments")
@@ -124,7 +124,7 @@ public class Issues {
      * @param comments
      * @param closedBy
      */
-    public Issues(String url, String repositoryUrl, String labelsUrl, String commentsUrl, String eventsUrl, String htmlUrl, int id, String nodeId, int number, String title, User user, List<Label> labels, String state, boolean locked, Assignee assignee, List<Assignee_> assignees, Object milestone, int comments, String createdAt, String updatedAt, Object closedAt, String authorAssociation, String body, Object closedBy) {
+    public Issues(String url, String repositoryUrl, String labelsUrl, String commentsUrl, String eventsUrl, String htmlUrl, int id, String nodeId, int number, String title, User user, List<Label> labels, String state, boolean locked, Assignee assignee, List<Assignee> assignees, Object milestone, int comments, String createdAt, String updatedAt, Object closedAt, String authorAssociation, String body, Object closedBy) {
         super();
         this.url = url;
         this.repositoryUrl = repositoryUrl;
@@ -303,12 +303,12 @@ public class Issues {
     }
 
     @JsonProperty("assignees")
-    public List<Assignee_> getAssignees() {
+    public List<Assignee> getAssignees() {
         return assignees;
     }
 
     @JsonProperty("assignees")
-    public void setAssignees(List<Assignee_> assignees) {
+    public void setAssignees(List<Assignee> assignees) {
         this.assignees = assignees;
     }
 

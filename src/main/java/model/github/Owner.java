@@ -1,4 +1,4 @@
-package github.model;
+package model.github;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -30,7 +30,7 @@ import com.fasterxml.jackson.annotation.JsonPropertyOrder;
         "type",
         "site_admin"
 })
-public class Organization {
+public class Owner {
 
     @JsonProperty("login")
     private String login;
@@ -75,7 +75,7 @@ public class Organization {
      * No args constructor for use in serialization
      *
      */
-    public Organization() {
+    public Owner() {
     }
 
     /**
@@ -99,7 +99,7 @@ public class Organization {
      * @param login
      * @param starredUrl
      */
-    public Organization(String login, int id, String nodeId, String avatarUrl, String gravatarId, String url, String htmlUrl, String followersUrl, String followingUrl, String gistsUrl, String starredUrl, String subscriptionsUrl, String organizationsUrl, String reposUrl, String eventsUrl, String receivedEventsUrl, String type, boolean siteAdmin) {
+    public Owner(String login, int id, String nodeId, String avatarUrl, String gravatarId, String url, String htmlUrl, String followersUrl, String followingUrl, String gistsUrl, String starredUrl, String subscriptionsUrl, String organizationsUrl, String reposUrl, String eventsUrl, String receivedEventsUrl, String type, boolean siteAdmin) {
         super();
         this.login = login;
         this.id = id;

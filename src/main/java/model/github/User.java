@@ -1,4 +1,4 @@
-package github.model;
+package model.github;
 
 import com.fasterxml.jackson.annotation.*;
 
@@ -26,7 +26,7 @@ import java.util.Map;
         "type",
         "site_admin"
 })
-public class Assignee {
+public class User {
 
     @JsonProperty("login")
     private String login;
@@ -71,7 +71,7 @@ public class Assignee {
      * No args constructor for use in serialization
      *
      */
-    public Assignee() {
+    public User() {
     }
 
     /**
@@ -95,7 +95,7 @@ public class Assignee {
      * @param login
      * @param starredUrl
      */
-    public Assignee(String login, int id, String nodeId, String avatarUrl, String gravatarId, String url, String htmlUrl, String followersUrl, String followingUrl, String gistsUrl, String starredUrl, String subscriptionsUrl, String organizationsUrl, String reposUrl, String eventsUrl, String receivedEventsUrl, String type, boolean siteAdmin) {
+    public User(String login, int id, String nodeId, String avatarUrl, String gravatarId, String url, String htmlUrl, String followersUrl, String followingUrl, String gistsUrl, String starredUrl, String subscriptionsUrl, String organizationsUrl, String reposUrl, String eventsUrl, String receivedEventsUrl, String type, boolean siteAdmin) {
         super();
         this.login = login;
         this.id = id;

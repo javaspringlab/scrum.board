@@ -1,4 +1,4 @@
-package github.model;
+package model.github;
 
 import com.fasterxml.jackson.annotation.*;
 

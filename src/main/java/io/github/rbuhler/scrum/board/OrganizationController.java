@@ -1,7 +1,7 @@
 package io.github.rbuhler.scrum.board;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
-import github.model.Organization;
+import model.github.Organization;
 import org.springframework.http.HttpEntity;
 import org.springframework.http.HttpHeaders;
 import org.springframework.http.HttpMethod;
@@ -42,6 +42,7 @@ public class OrganizationController {
 }
 
 /*
+todo
 https://spring.io/guides/gs/rest-service/
 http://localhost:8080/gitOrg?org=javaspringlab
 http://www.jsonschema2pojo.org

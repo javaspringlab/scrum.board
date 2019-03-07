@@ -1,4 +1,4 @@
-package github.model;
+package model.github;
 
 import java.util.HashMap;
 import java.util.Map;
