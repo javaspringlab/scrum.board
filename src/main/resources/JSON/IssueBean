@@ -1,0 +1,2037 @@
+[{
+  "expand": "names,schema",
+  "startAt": 0,
+  "maxResults": 50,
+  "total": 1,
+  "issues": [
+    {
+      "expand": "operations,versionedRepresentations,editmeta,changelog,renderedFields",
+      "id": "5800712",
+      "self": "https://sapjira.wdf.sap.corp/rest/api/2/issue/5800712",
+      "key": "GSLOGBRNFE3-3689",
+      "fields": {
+        "customfield_17142": null,
+        "customfield_19442": null,
+        "customfield_17141": null,
+        "customfield_19443": null,
+        "parent": {
+          "id": "5676944",
+          "key": "GSLOGBRNFE3-3548",
+          "self": "https://sapjira.wdf.sap.corp/rest/api/2/issue/5676944",
+          "fields": {
+            "summary": "Implement Process Step - Check Status [Armbrust]",
+            "status": {
+              "self": "https://sapjira.wdf.sap.corp/rest/api/2/status/1",
+              "description": "The item is open and ready for the assignee to start work on it.",
+              "iconUrl": "https://sapjira.wdf.sap.corp/images/icons/statuses/open.png",
+              "name": "Open",
+              "id": "1",
+              "statusCategory": {
+                "self": "https://sapjira.wdf.sap.corp/rest/api/2/statuscategory/2",
+                "id": 2,
+                "key": "new",
+                "colorName": "blue-gray",
+                "name": "To Do"
+              }
+            },
+            "priority": {
+              "self": "https://sapjira.wdf.sap.corp/rest/api/2/priority/3",
+              "iconUrl": "https://sapjira.wdf.sap.corp/images/icons/priorities/major.svg",
+              "name": "Medium",
+              "id": "3"
+            },
+            "issuetype": {
+              "self": "https://sapjira.wdf.sap.corp/rest/api/2/issuetype/6",
+              "id": "6",
+              "description": "Backlog Item",
+              "iconUrl": "https://sapjira.wdf.sap.corp/images/icons/issuetypes/requirement.png",
+              "name": "Backlog Item",
+              "subtask": false
+            }
+          }
+        },
+        "customfield_17140": null,
+        "customfield_10070": {
+          "self": "https://sapjira.wdf.sap.corp/rest/api/2/customFieldOption/10021",
+          "value": "No",
+          "id": "10021"
+        },
+        "customfield_17146": null,
+        "customfield_10071": {
+          "self": "https://sapjira.wdf.sap.corp/rest/api/2/customFieldOption/10023",
+          "value": "No",
+          "id": "10023"
+        },
+        "customfield_17145": null,
+        "customfield_13340": null,
+        "customfield_17144": null,
+        "customfield_19440": null,
+        "customfield_17143": null,
+        "customfield_19441": null,
+        "customfield_15246": null,
+        "customfield_11441": null,
+        "customfield_15640": null,
+        "fixVersions": [
+          {
+            "self": "https://sapjira.wdf.sap.corp/rest/api/2/version/207145",
+            "id": "207145",
+            "description": "D_S4OP_1909_FPS0_S/4HANA on-premise 1909 (cluster)",
+            "name": "D_S4OP_1909_FPS0",
+            "archived": false,
+            "released": false
+          }
+        ],
+        "customfield_11440": null,
+        "customfield_10111": null,
+        "resolution": null,
+        "customfield_11841": null,
+        "customfield_19040": {
+          "self": "https://sapjira.wdf.sap.corp/rest/api/2/customFieldOption/31061",
+          "value": "No",
+          "id": "31061"
+        },
+        "customfield_19041": null,
+        "customfield_20541": null,
+        "customfield_16041": null,
+        "lastViewed": "2019-03-08T16:28:22.624+0000",
+        "customfield_16040": null,
+        "customfield_10180": null,
+        "customfield_16442": null,
+        "customfield_10060": null,
+        "customfield_16045": null,
+        "customfield_10061": "2018-12-26",
+        "customfield_16044": null,
+        "customfield_18341": null,
+        "customfield_16842": null,
+        "customfield_16841": null,
+        "customfield_10340": "9223372036854775807",
+        "customfield_16444": null,
+        "customfield_16840": null,
+        "customfield_18748": "Add any other requirements for the API that you might have, e.g. performance expectations: do you want the API to handle batch input? What is the latency you expect?",
+        "customfield_10220": {
+          "self": "https://sapjira.wdf.sap.corp/rest/api/2/customFieldOption/10140",
+          "value": "default",
+          "id": "10140"
+        },
+        "customfield_16443": null,
+        "priority": {
+          "self": "https://sapjira.wdf.sap.corp/rest/api/2/priority/3",
+          "iconUrl": "https://sapjira.wdf.sap.corp/images/icons/priorities/major.svg",
+          "name": "Medium",
+          "id": "3"
+        },
+        "customfield_10221": null,
+        "customfield_10861": null,
+        "labels": [],
+        "customfield_14941": null,
+        "customfield_10852": null,
+        "customfield_10853": null,
+        "customfield_10854": null,
+        "customfield_10855": null,
+        "customfield_10856": null,
+        "aggregatetimeoriginalestimate": null,
+        "timeestimate": null,
+        "versions": [],
+        "customfield_10857": null,
+        "issuelinks": [],
+        "assignee": {
+          "self": "https://sapjira.wdf.sap.corp/rest/api/2/user?username=I820244",
+          "name": "I820244",
+          "key": "i820244",
+          "emailAddress": "rodrigo.buhler@sap.com",
+          "avatarUrls": {
+            "48x48": "https://sapjira.wdf.sap.corp/secure/useravatar?ownerId=i820244&avatarId=51266",
+            "24x24": "https://sapjira.wdf.sap.corp/secure/useravatar?size=small&ownerId=i820244&avatarId=51266",
+            "16x16": "https://sapjira.wdf.sap.corp/secure/useravatar?size=xsmall&ownerId=i820244&avatarId=51266",
+            "32x32": "https://sapjira.wdf.sap.corp/secure/useravatar?size=medium&ownerId=i820244&avatarId=51266"
+          },
+          "displayName": "Buhler, Rodrigo",
+          "active": true,
+          "timeZone": "America/Sao_Paulo"
+        },
+        "status": {
+          "self": "https://sapjira.wdf.sap.corp/rest/api/2/status/1",
+          "description": "The item is open and ready for the assignee to start work on it.",
+          "iconUrl": "https://sapjira.wdf.sap.corp/images/icons/statuses/open.png",
+          "name": "Open",
+          "id": "1",
+          "statusCategory": {
+            "self": "https://sapjira.wdf.sap.corp/rest/api/2/statuscategory/2",
+            "id": 2,
+            "key": "new",
+            "colorName": "blue-gray",
+            "name": "To Do"
+          }
+        },
+        "components": [],
+        "customfield_10290": null,
+        "customfield_10291": null,
+        "customfield_15340": "maintain in CAL Solution Editor",
+        "customfield_15741": null,
+        "customfield_11540": null,
+        "customfield_10210": "9223372036854775807",
+        "customfield_19942": null,
+        "customfield_10850": null,
+        "customfield_10851": null,
+        "customfield_10842": null,
+        "customfield_10843": null,
+        "customfield_10844": null,
+        "customfield_10845": null,
+        "aggregatetimeestimate": null,
+        "customfield_10846": null,
+        "customfield_10847": {
+          "self": "https://sapjira.wdf.sap.corp/rest/api/2/customFieldOption/10960",
+          "value": "Internal",
+          "id": "10960"
+        },
+        "customfield_10848": null,
+        "customfield_10849": null,
+        "customfield_19140": null,
+        "customfield_16141": null,
+        "customfield_20640": null,
+        "customfield_16140": null,
+        "customfield_18442": null,
+        "creator": {
+          "self": "https://sapjira.wdf.sap.corp/rest/api/2/user?username=I820244",
+          "name": "I820244",
+          "key": "i820244",
+          "emailAddress": "rodrigo.buhler@sap.com",
+          "avatarUrls": {
+            "48x48": "https://sapjira.wdf.sap.corp/secure/useravatar?ownerId=i820244&avatarId=51266",
+            "24x24": "https://sapjira.wdf.sap.corp/secure/useravatar?size=small&ownerId=i820244&avatarId=51266",
+            "16x16": "https://sapjira.wdf.sap.corp/secure/useravatar?size=xsmall&ownerId=i820244&avatarId=51266",
+            "32x32": "https://sapjira.wdf.sap.corp/secure/useravatar?size=medium&ownerId=i820244&avatarId=51266"
+          },
+          "displayName": "Buhler, Rodrigo",
+          "active": true,
+          "timeZone": "America/Sao_Paulo"
+        },
+        "customfield_18840": null,
+        "subtasks": [],
+        "customfield_10161": null,
+        "customfield_16940": null,
+        "reporter": {
+          "self": "https://sapjira.wdf.sap.corp/rest/api/2/user?username=I865063",
+          "name": "I865063",
+          "key": "i865063",
+          "emailAddress": "nicolas.land@sap.com",
+          "avatarUrls": {
+            "48x48": "https://sapjira.wdf.sap.corp/secure/useravatar?ownerId=i865063&avatarId=43949",
+            "24x24": "https://sapjira.wdf.sap.corp/secure/useravatar?size=small&ownerId=i865063&avatarId=43949",
+            "16x16": "https://sapjira.wdf.sap.corp/secure/useravatar?size=xsmall&ownerId=i865063&avatarId=43949",
+            "32x32": "https://sapjira.wdf.sap.corp/secure/useravatar?size=medium&ownerId=i865063&avatarId=43949"
+          },
+          "displayName": "Land, Nicolas",
+          "active": true,
+          "timeZone": "America/Sao_Paulo"
+        },
+        "aggregateprogress": {
+          "progress": 0,
+          "total": 0
+        },
+        "customfield_12740": [
+          "com.atlassian.greenhopper.service.sprint.Sprint@64e8bbc6[id=68269,rapidViewId=7860,state=ACTIVE,name=Sprint 04 / 2019 (Inbound),startDate=2019-02-26T11:57:44.420Z,endDate=2019-03-15T18:57:00.000Z,completeDate=<null>,sequence=63813,goal=<null>]"
+        ],
+        "customfield_10038": null,
+        "customfield_15848": null,
+        "customfield_10039": "false",
+        "customfield_15846": null,
+        "customfield_15847": null,
+        "progress": {
+          "progress": 0,
+          "total": 0
+        },
+        "votes": {
+          "self": "https://sapjira.wdf.sap.corp/rest/api/2/issue/GSLOGBRNFE3-3689/votes",
+          "votes": 0,
+          "hasVoted": false
+        },
+        "issuetype": {
+          "self": "https://sapjira.wdf.sap.corp/rest/api/2/issuetype/5",
+          "id": "5",
+          "description": "Task",
+          "iconUrl": "https://sapjira.wdf.sap.corp/secure/viewavatar?size=xsmall&avatarId=27826&avatarType=issuetype",
+          "name": "Task",
+          "subtask": true,
+          "avatarId": 27826
+        },
+        "customfield_15440": null,
+        "customfield_15441": "maintain in CAL Solution Editor",
+        "customfield_10270": "9223372036854775807",
+        "timespent": null,
+        "customfield_10150": null,
+        "customfield_10271": "9223372036854775807",
+        "customfield_15841": null,
+        "project": {
+          "self": "https://sapjira.wdf.sap.corp/rest/api/2/project/43830",
+          "id": "43830",
+          "key": "GSLOGBRNFE3",
+          "name": "GSLOGBRNFE3",
+          "avatarUrls": {
+            "48x48": "https://sapjira.wdf.sap.corp/secure/projectavatar?pid=43830&avatarId=38628",
+            "24x24": "https://sapjira.wdf.sap.corp/secure/projectavatar?size=small&pid=43830&avatarId=38628",
+            "16x16": "https://sapjira.wdf.sap.corp/secure/projectavatar?size=xsmall&pid=43830&avatarId=38628",
+            "32x32": "https://sapjira.wdf.sap.corp/secure/projectavatar?size=medium&pid=43830&avatarId=38628"
+          }
+        },
+        "customfield_15844": null,
+        "aggregatetimespent": null,
+        "customfield_11640": null,
+        "customfield_15845": null,
+        "customfield_10036": null,
+        "customfield_10037": null,
+        "customfield_15843": null,
+        "customfield_10941": null,
+        "customfield_10942": null,
+        "customfield_10943": null,
+        "customfield_10944": null,
+        "customfield_10945": null,
+        "customfield_10946": {
+          "self": "https://sapjira.wdf.sap.corp/rest/api/2/customFieldOption/11185",
+          "value": "Not Set",
+          "id": "11185"
+        },
+        "resolutiondate": null,
+        "customfield_10947": {
+          "self": "https://sapjira.wdf.sap.corp/rest/api/2/customFieldOption/11190",
+          "value": "Yes",
+          "id": "11190"
+        },
+        "customfield_10948": null,
+        "workratio": -1,
+        "customfield_16240": null,
+        "watches": {
+          "self": "https://sapjira.wdf.sap.corp/rest/api/2/issue/GSLOGBRNFE3-3689/watchers",
+          "watchCount": 0,
+          "isWatching": false
+        },
+        "customfield_20341": null,
+        "customfield_16640": null,
+        "created": "2019-02-25T14:15:00.000+0000",
+        "customfield_16241": null,
+        "customfield_18947": null,
+        "customfield_10300": null,
+        "updated": "2019-02-26T18:31:45.000+0000",
+        "customfield_15140": null,
+        "customfield_19740": null,
+        "customfield_15144": "2|i0004n:",
+        "timeoriginalestimate": null,
+        "customfield_11340": null,
+        "description": "Collect and check the proper DoD items: [Definition of Done|https://github.wdf.sap.corp/DCSInboundBR/KnowledgeCenter/blob/master/Quality_and_Test/Definition_of_Done.md] : {quote}Backlog: *OPEN* GTP: {color:#d04437}*OPEN*{color} SUT: *OPEN* Internal Messages: *OPEN* Acceptance Criteria: *OPEN* {quote}",
+        "customfield_10130": "2018-12-26",
+        "customfield_15940": null,
+        "customfield_10013": null,
+        "customfield_10005": null,
+        "customfield_10248": null,
+        "summary": "[DOD] Check - GSLOGBRNFE3-3548",
+        "customfield_20040": null,
+        "customfield_12140": null,
+        "customfield_16340": null,
+        "customfield_20041": null,
+        "customfield_10120": null,
+        "customfield_10241": null,
+        "customfield_16740": null,
+        "customfield_10003": {
+          "self": "https://sapjira.wdf.sap.corp/rest/api/2/customFieldOption/10010",
+          "value": "Yes",
+          "id": "10010"
+        },
+        "environment": null,
+        "duedate": null
+      }
+    }
+  ]
+},
+  {
+    "expand": "names,schema",
+    "startAt": 0,
+    "maxResults": 50,
+    "total": 1,
+    "issues": [
+      {
+        "expand": "operations,versionedRepresentations,editmeta,changelog,renderedFields",
+        "id": "5805827",
+        "self": "https://sapjira.wdf.sap.corp/rest/api/2/issue/5805827",
+        "key": "GSLOGBRNFE3-3716",
+        "fields": {
+          "customfield_17142": null,
+          "customfield_19442": null,
+          "customfield_17141": null,
+          "customfield_19443": null,
+          "parent": {
+            "id": "5676944",
+            "key": "GSLOGBRNFE3-3548",
+            "self": "https://sapjira.wdf.sap.corp/rest/api/2/issue/5676944",
+            "fields": {
+              "summary": "Implement Process Step - Check Status [Armbrust]",
+              "status": {
+                "self": "https://sapjira.wdf.sap.corp/rest/api/2/status/1",
+                "description": "The item is open and ready for the assignee to start work on it.",
+                "iconUrl": "https://sapjira.wdf.sap.corp/images/icons/statuses/open.png",
+                "name": "Open",
+                "id": "1",
+                "statusCategory": {
+                  "self": "https://sapjira.wdf.sap.corp/rest/api/2/statuscategory/2",
+                  "id": 2,
+                  "key": "new",
+                  "colorName": "blue-gray",
+                  "name": "To Do"
+                }
+              },
+              "priority": {
+                "self": "https://sapjira.wdf.sap.corp/rest/api/2/priority/3",
+                "iconUrl": "https://sapjira.wdf.sap.corp/images/icons/priorities/major.svg",
+                "name": "Medium",
+                "id": "3"
+              },
+              "issuetype": {
+                "self": "https://sapjira.wdf.sap.corp/rest/api/2/issuetype/6",
+                "id": "6",
+                "description": "Backlog Item",
+                "iconUrl": "https://sapjira.wdf.sap.corp/images/icons/issuetypes/requirement.png",
+                "name": "Backlog Item",
+                "subtask": false
+              }
+            }
+          },
+          "customfield_17140": null,
+          "customfield_10070": {
+            "self": "https://sapjira.wdf.sap.corp/rest/api/2/customFieldOption/10021",
+            "value": "No",
+            "id": "10021"
+          },
+          "customfield_17146": null,
+          "customfield_10071": {
+            "self": "https://sapjira.wdf.sap.corp/rest/api/2/customFieldOption/10023",
+            "value": "No",
+            "id": "10023"
+          },
+          "customfield_17145": null,
+          "customfield_13340": null,
+          "customfield_17144": null,
+          "customfield_19440": null,
+          "customfield_17143": null,
+          "customfield_19441": null,
+          "customfield_15246": null,
+          "customfield_11441": null,
+          "customfield_15640": null,
+          "fixVersions": [
+            {
+              "self": "https://sapjira.wdf.sap.corp/rest/api/2/version/207145",
+              "id": "207145",
+              "description": "D_S4OP_1909_FPS0_S/4HANA on-premise 1909 (cluster)",
+              "name": "D_S4OP_1909_FPS0",
+              "archived": false,
+              "released": false
+            }
+          ],
+          "customfield_11440": null,
+          "customfield_10111": null,
+          "resolution": null,
+          "customfield_11841": null,
+          "customfield_19040": {
+            "self": "https://sapjira.wdf.sap.corp/rest/api/2/customFieldOption/31061",
+            "value": "No",
+            "id": "31061"
+          },
+          "customfield_19041": null,
+          "customfield_20541": null,
+          "customfield_16041": null,
+          "lastViewed": "2019-02-27T18:03:31.852+0000",
+          "customfield_16040": null,
+          "customfield_10180": null,
+          "customfield_16442": null,
+          "customfield_10060": null,
+          "customfield_16045": null,
+          "customfield_10061": "2019-02-26",
+          "customfield_16044": null,
+          "customfield_18341": null,
+          "customfield_16842": null,
+          "customfield_16841": null,
+          "customfield_10340": "9223372036854775807",
+          "customfield_16444": null,
+          "customfield_16840": null,
+          "customfield_18748": "Add any other requirements for the API that you might have, e.g. performance expectations: do you want the API to handle batch input? What is the latency you expect?",
+          "customfield_10220": {
+            "self": "https://sapjira.wdf.sap.corp/rest/api/2/customFieldOption/10140",
+            "value": "default",
+            "id": "10140"
+          },
+          "customfield_16443": null,
+          "priority": {
+            "self": "https://sapjira.wdf.sap.corp/rest/api/2/priority/3",
+            "iconUrl": "https://sapjira.wdf.sap.corp/images/icons/priorities/major.svg",
+            "name": "Medium",
+            "id": "3"
+          },
+          "customfield_10221": null,
+          "customfield_10861": null,
+          "labels": [],
+          "customfield_14941": null,
+          "customfield_10852": null,
+          "customfield_10853": null,
+          "customfield_10854": null,
+          "customfield_10855": null,
+          "customfield_10856": null,
+          "aggregatetimeoriginalestimate": null,
+          "timeestimate": null,
+          "versions": [],
+          "customfield_10857": null,
+          "issuelinks": [],
+          "assignee": {
+            "self": "https://sapjira.wdf.sap.corp/rest/api/2/user?username=I820244",
+            "name": "I820244",
+            "key": "i820244",
+            "emailAddress": "rodrigo.buhler@sap.com",
+            "avatarUrls": {
+              "48x48": "https://sapjira.wdf.sap.corp/secure/useravatar?ownerId=i820244&avatarId=51266",
+              "24x24": "https://sapjira.wdf.sap.corp/secure/useravatar?size=small&ownerId=i820244&avatarId=51266",
+              "16x16": "https://sapjira.wdf.sap.corp/secure/useravatar?size=xsmall&ownerId=i820244&avatarId=51266",
+              "32x32": "https://sapjira.wdf.sap.corp/secure/useravatar?size=medium&ownerId=i820244&avatarId=51266"
+            },
+            "displayName": "Buhler, Rodrigo",
+            "active": true,
+            "timeZone": "America/Sao_Paulo"
+          },
+          "status": {
+            "self": "https://sapjira.wdf.sap.corp/rest/api/2/status/3",
+            "description": "This item is being actively worked on at the moment by the assignee.",
+            "iconUrl": "https://sapjira.wdf.sap.corp/images/icons/statuses/inprogress.png",
+            "name": "In Progress",
+            "id": "3",
+            "statusCategory": {
+              "self": "https://sapjira.wdf.sap.corp/rest/api/2/statuscategory/4",
+              "id": 4,
+              "key": "indeterminate",
+              "colorName": "yellow",
+              "name": "In Progress"
+            }
+          },
+          "components": [],
+          "customfield_10290": null,
+          "customfield_10291": null,
+          "customfield_15340": "maintain in CAL Solution Editor",
+          "customfield_15741": null,
+          "customfield_11540": null,
+          "customfield_10210": "9223372036854775807",
+          "customfield_19942": null,
+          "customfield_10850": null,
+          "customfield_10851": null,
+          "customfield_10842": null,
+          "customfield_10843": null,
+          "customfield_10844": null,
+          "customfield_10845": null,
+          "aggregatetimeestimate": null,
+          "customfield_10846": null,
+          "customfield_10847": {
+            "self": "https://sapjira.wdf.sap.corp/rest/api/2/customFieldOption/10960",
+            "value": "Internal",
+            "id": "10960"
+          },
+          "customfield_10848": null,
+          "customfield_10849": null,
+          "customfield_19140": null,
+          "customfield_16141": null,
+          "customfield_20640": null,
+          "customfield_16140": null,
+          "customfield_18442": null,
+          "creator": {
+            "self": "https://sapjira.wdf.sap.corp/rest/api/2/user?username=C5276044",
+            "name": "C5276044",
+            "key": "c5276044",
+            "emailAddress": "raphael.souza@sap.com",
+            "avatarUrls": {
+              "48x48": "https://sapjira.wdf.sap.corp/secure/useravatar?avatarId=10432",
+              "24x24": "https://sapjira.wdf.sap.corp/secure/useravatar?size=small&avatarId=10432",
+              "16x16": "https://sapjira.wdf.sap.corp/secure/useravatar?size=xsmall&avatarId=10432",
+              "32x32": "https://sapjira.wdf.sap.corp/secure/useravatar?size=medium&avatarId=10432"
+            },
+            "displayName": "SOUZA, RAPHAEL (external - Project)",
+            "active": true,
+            "timeZone": "Etc/UTC"
+          },
+          "customfield_18840": null,
+          "subtasks": [],
+          "customfield_10161": null,
+          "customfield_16940": null,
+          "reporter": {
+            "self": "https://sapjira.wdf.sap.corp/rest/api/2/user?username=C5276044",
+            "name": "C5276044",
+            "key": "c5276044",
+            "emailAddress": "raphael.souza@sap.com",
+            "avatarUrls": {
+              "48x48": "https://sapjira.wdf.sap.corp/secure/useravatar?avatarId=10432",
+              "24x24": "https://sapjira.wdf.sap.corp/secure/useravatar?size=small&avatarId=10432",
+              "16x16": "https://sapjira.wdf.sap.corp/secure/useravatar?size=xsmall&avatarId=10432",
+              "32x32": "https://sapjira.wdf.sap.corp/secure/useravatar?size=medium&avatarId=10432"
+            },
+            "displayName": "SOUZA, RAPHAEL (external - Project)",
+            "active": true,
+            "timeZone": "Etc/UTC"
+          },
+          "aggregateprogress": {
+            "progress": 0,
+            "total": 0
+          },
+          "customfield_12740": [
+            "com.atlassian.greenhopper.service.sprint.Sprint@722f55ca[id=68269,rapidViewId=7860,state=ACTIVE,name=Sprint 04 / 2019 (Inbound),startDate=2019-02-26T11:57:44.420Z,endDate=2019-03-15T18:57:00.000Z,completeDate=<null>,sequence=63813,goal=<null>]"
+          ],
+          "customfield_10038": null,
+          "customfield_15848": null,
+          "customfield_10039": "false",
+          "customfield_15846": null,
+          "customfield_15847": null,
+          "progress": {
+            "progress": 0,
+            "total": 0
+          },
+          "votes": {
+            "self": "https://sapjira.wdf.sap.corp/rest/api/2/issue/GSLOGBRNFE3-3716/votes",
+            "votes": 0,
+            "hasVoted": false
+          },
+          "issuetype": {
+            "self": "https://sapjira.wdf.sap.corp/rest/api/2/issuetype/5",
+            "id": "5",
+            "description": "Task",
+            "iconUrl": "https://sapjira.wdf.sap.corp/secure/viewavatar?size=xsmall&avatarId=27826&avatarType=issuetype",
+            "name": "Task",
+            "subtask": true,
+            "avatarId": 27826
+          },
+          "customfield_15440": null,
+          "customfield_15441": "maintain in CAL Solution Editor",
+          "customfield_10270": "9223372036854775807",
+          "timespent": null,
+          "customfield_10150": null,
+          "customfield_10271": "9223372036854775807",
+          "customfield_15841": null,
+          "project": {
+            "self": "https://sapjira.wdf.sap.corp/rest/api/2/project/43830",
+            "id": "43830",
+            "key": "GSLOGBRNFE3",
+            "name": "GSLOGBRNFE3",
+            "avatarUrls": {
+              "48x48": "https://sapjira.wdf.sap.corp/secure/projectavatar?pid=43830&avatarId=38628",
+              "24x24": "https://sapjira.wdf.sap.corp/secure/projectavatar?size=small&pid=43830&avatarId=38628",
+              "16x16": "https://sapjira.wdf.sap.corp/secure/projectavatar?size=xsmall&pid=43830&avatarId=38628",
+              "32x32": "https://sapjira.wdf.sap.corp/secure/projectavatar?size=medium&pid=43830&avatarId=38628"
+            }
+          },
+          "customfield_15844": null,
+          "aggregatetimespent": null,
+          "customfield_11640": null,
+          "customfield_15845": null,
+          "customfield_10036": null,
+          "customfield_10037": null,
+          "customfield_15843": null,
+          "customfield_10941": null,
+          "customfield_10942": null,
+          "customfield_10943": null,
+          "customfield_10944": null,
+          "customfield_10945": null,
+          "customfield_10946": {
+            "self": "https://sapjira.wdf.sap.corp/rest/api/2/customFieldOption/11185",
+            "value": "Not Set",
+            "id": "11185"
+          },
+          "resolutiondate": null,
+          "customfield_10947": {
+            "self": "https://sapjira.wdf.sap.corp/rest/api/2/customFieldOption/11190",
+            "value": "Yes",
+            "id": "11190"
+          },
+          "customfield_10948": null,
+          "workratio": -1,
+          "customfield_16240": null,
+          "watches": {
+            "self": "https://sapjira.wdf.sap.corp/rest/api/2/issue/GSLOGBRNFE3-3716/watchers",
+            "watchCount": 1,
+            "isWatching": false
+          },
+          "customfield_20341": null,
+          "customfield_16640": null,
+          "created": "2019-02-26T14:12:29.000+0000",
+          "customfield_16241": null,
+          "customfield_18947": null,
+          "customfield_10300": null,
+          "updated": "2019-02-27T18:03:32.000+0000",
+          "customfield_15140": null,
+          "customfield_19740": null,
+          "customfield_15144": "2|i00vcn:",
+          "timeoriginalestimate": null,
+          "customfield_11340": null,
+          "description": null,
+          "customfield_10130": "2019-02-26",
+          "customfield_15940": null,
+          "customfield_10013": null,
+          "customfield_10005": null,
+          "customfield_10248": null,
+          "summary": "Execute Test Case - ST Process",
+          "customfield_20040": null,
+          "customfield_12140": null,
+          "customfield_16340": null,
+          "customfield_20041": null,
+          "customfield_10120": null,
+          "customfield_10241": null,
+          "customfield_16740": null,
+          "customfield_10003": {
+            "self": "https://sapjira.wdf.sap.corp/rest/api/2/customFieldOption/10010",
+            "value": "Yes",
+            "id": "10010"
+          },
+          "environment": null,
+          "duedate": null
+        }
+      }
+    ]
+  },
+  {
+    "expand": "names,schema",
+    "startAt": 0,
+    "maxResults": 50,
+    "total": 1,
+    "issues": [
+      {
+        "expand": "operations,versionedRepresentations,editmeta,changelog,renderedFields",
+        "id": "5815223",
+        "self": "https://sapjira.wdf.sap.corp/rest/api/2/issue/5815223",
+        "key": "GSLOGBRNFE3-3725",
+        "fields": {
+          "customfield_17142": null,
+          "customfield_19442": null,
+          "customfield_17141": null,
+          "customfield_19443": null,
+          "parent": {
+            "id": "5676944",
+            "key": "GSLOGBRNFE3-3548",
+            "self": "https://sapjira.wdf.sap.corp/rest/api/2/issue/5676944",
+            "fields": {
+              "summary": "Implement Process Step - Check Status [Armbrust]",
+              "status": {
+                "self": "https://sapjira.wdf.sap.corp/rest/api/2/status/1",
+                "description": "The item is open and ready for the assignee to start work on it.",
+                "iconUrl": "https://sapjira.wdf.sap.corp/images/icons/statuses/open.png",
+                "name": "Open",
+                "id": "1",
+                "statusCategory": {
+                  "self": "https://sapjira.wdf.sap.corp/rest/api/2/statuscategory/2",
+                  "id": 2,
+                  "key": "new",
+                  "colorName": "blue-gray",
+                  "name": "To Do"
+                }
+              },
+              "priority": {
+                "self": "https://sapjira.wdf.sap.corp/rest/api/2/priority/3",
+                "iconUrl": "https://sapjira.wdf.sap.corp/images/icons/priorities/major.svg",
+                "name": "Medium",
+                "id": "3"
+              },
+              "issuetype": {
+                "self": "https://sapjira.wdf.sap.corp/rest/api/2/issuetype/6",
+                "id": "6",
+                "description": "Backlog Item",
+                "iconUrl": "https://sapjira.wdf.sap.corp/images/icons/issuetypes/requirement.png",
+                "name": "Backlog Item",
+                "subtask": false
+              }
+            }
+          },
+          "customfield_17140": null,
+          "customfield_10070": {
+            "self": "https://sapjira.wdf.sap.corp/rest/api/2/customFieldOption/10021",
+            "value": "No",
+            "id": "10021"
+          },
+          "customfield_17146": null,
+          "customfield_10071": {
+            "self": "https://sapjira.wdf.sap.corp/rest/api/2/customFieldOption/10023",
+            "value": "No",
+            "id": "10023"
+          },
+          "customfield_17145": null,
+          "customfield_13340": null,
+          "customfield_17144": null,
+          "customfield_19440": null,
+          "customfield_17143": null,
+          "customfield_19441": null,
+          "customfield_15246": null,
+          "customfield_11441": null,
+          "customfield_15640": null,
+          "fixVersions": [],
+          "customfield_11440": null,
+          "customfield_10111": null,
+          "resolution": null,
+          "customfield_11841": null,
+          "customfield_19040": {
+            "self": "https://sapjira.wdf.sap.corp/rest/api/2/customFieldOption/31061",
+            "value": "No",
+            "id": "31061"
+          },
+          "customfield_19041": null,
+          "customfield_20541": null,
+          "customfield_16041": null,
+          "lastViewed": "2019-03-07T14:19:29.811+0000",
+          "customfield_16040": null,
+          "customfield_10180": null,
+          "customfield_16442": null,
+          "customfield_10060": null,
+          "customfield_16045": null,
+          "customfield_10061": "2019-02-28",
+          "customfield_16044": null,
+          "customfield_18341": null,
+          "customfield_16842": null,
+          "customfield_16841": null,
+          "customfield_10340": "9223372036854775807",
+          "customfield_16444": null,
+          "customfield_16840": null,
+          "customfield_18748": "Add any other requirements for the API that you might have, e.g. performance expectations: do you want the API to handle batch input? What is the latency you expect?",
+          "customfield_10220": {
+            "self": "https://sapjira.wdf.sap.corp/rest/api/2/customFieldOption/10140",
+            "value": "default",
+            "id": "10140"
+          },
+          "customfield_16443": null,
+          "priority": {
+            "self": "https://sapjira.wdf.sap.corp/rest/api/2/priority/3",
+            "iconUrl": "https://sapjira.wdf.sap.corp/images/icons/priorities/major.svg",
+            "name": "Medium",
+            "id": "3"
+          },
+          "customfield_10221": null,
+          "customfield_10861": null,
+          "labels": [],
+          "customfield_14941": null,
+          "customfield_10852": null,
+          "customfield_10853": null,
+          "customfield_10854": null,
+          "customfield_10855": null,
+          "customfield_10856": null,
+          "aggregatetimeoriginalestimate": null,
+          "timeestimate": null,
+          "versions": [],
+          "customfield_10857": null,
+          "issuelinks": [],
+          "assignee": {
+            "self": "https://sapjira.wdf.sap.corp/rest/api/2/user?username=C5276044",
+            "name": "C5276044",
+            "key": "c5276044",
+            "emailAddress": "raphael.souza@sap.com",
+            "avatarUrls": {
+              "48x48": "https://sapjira.wdf.sap.corp/secure/useravatar?avatarId=10432",
+              "24x24": "https://sapjira.wdf.sap.corp/secure/useravatar?size=small&avatarId=10432",
+              "16x16": "https://sapjira.wdf.sap.corp/secure/useravatar?size=xsmall&avatarId=10432",
+              "32x32": "https://sapjira.wdf.sap.corp/secure/useravatar?size=medium&avatarId=10432"
+            },
+            "displayName": "SOUZA, RAPHAEL (external - Project)",
+            "active": true,
+            "timeZone": "Etc/UTC"
+          },
+          "status": {
+            "self": "https://sapjira.wdf.sap.corp/rest/api/2/status/10029",
+            "description": "The issue can be reviewed by PO/team members.",
+            "iconUrl": "https://sapjira.wdf.sap.corp/images/icons/statuses/inprogress.png",
+            "name": "For Review",
+            "id": "10029",
+            "statusCategory": {
+              "self": "https://sapjira.wdf.sap.corp/rest/api/2/statuscategory/4",
+              "id": 4,
+              "key": "indeterminate",
+              "colorName": "yellow",
+              "name": "In Progress"
+            }
+          },
+          "components": [],
+          "customfield_10290": null,
+          "customfield_10291": null,
+          "customfield_15340": "maintain in CAL Solution Editor",
+          "customfield_15741": null,
+          "customfield_11540": null,
+          "customfield_10210": "9223372036854775807",
+          "customfield_19942": null,
+          "customfield_10850": null,
+          "customfield_10851": null,
+          "customfield_10842": null,
+          "customfield_10843": null,
+          "customfield_10844": null,
+          "customfield_10845": null,
+          "aggregatetimeestimate": null,
+          "customfield_10846": null,
+          "customfield_10847": {
+            "self": "https://sapjira.wdf.sap.corp/rest/api/2/customFieldOption/10960",
+            "value": "Internal",
+            "id": "10960"
+          },
+          "customfield_10848": null,
+          "customfield_10849": null,
+          "customfield_19140": null,
+          "customfield_16141": null,
+          "customfield_20640": null,
+          "customfield_16140": null,
+          "customfield_18442": null,
+          "creator": {
+            "self": "https://sapjira.wdf.sap.corp/rest/api/2/user?username=C5276044",
+            "name": "C5276044",
+            "key": "c5276044",
+            "emailAddress": "raphael.souza@sap.com",
+            "avatarUrls": {
+              "48x48": "https://sapjira.wdf.sap.corp/secure/useravatar?avatarId=10432",
+              "24x24": "https://sapjira.wdf.sap.corp/secure/useravatar?size=small&avatarId=10432",
+              "16x16": "https://sapjira.wdf.sap.corp/secure/useravatar?size=xsmall&avatarId=10432",
+              "32x32": "https://sapjira.wdf.sap.corp/secure/useravatar?size=medium&avatarId=10432"
+            },
+            "displayName": "SOUZA, RAPHAEL (external - Project)",
+            "active": true,
+            "timeZone": "Etc/UTC"
+          },
+          "customfield_18840": null,
+          "subtasks": [],
+          "customfield_10161": null,
+          "customfield_16940": null,
+          "reporter": {
+            "self": "https://sapjira.wdf.sap.corp/rest/api/2/user?username=C5276044",
+            "name": "C5276044",
+            "key": "c5276044",
+            "emailAddress": "raphael.souza@sap.com",
+            "avatarUrls": {
+              "48x48": "https://sapjira.wdf.sap.corp/secure/useravatar?avatarId=10432",
+              "24x24": "https://sapjira.wdf.sap.corp/secure/useravatar?size=small&avatarId=10432",
+              "16x16": "https://sapjira.wdf.sap.corp/secure/useravatar?size=xsmall&avatarId=10432",
+              "32x32": "https://sapjira.wdf.sap.corp/secure/useravatar?size=medium&avatarId=10432"
+            },
+            "displayName": "SOUZA, RAPHAEL (external - Project)",
+            "active": true,
+            "timeZone": "Etc/UTC"
+          },
+          "aggregateprogress": {
+            "progress": 0,
+            "total": 0
+          },
+          "customfield_12740": [
+            "com.atlassian.greenhopper.service.sprint.Sprint@722f55ca[id=68269,rapidViewId=7860,state=ACTIVE,name=Sprint 04 / 2019 (Inbound),startDate=2019-02-26T11:57:44.420Z,endDate=2019-03-15T18:57:00.000Z,completeDate=<null>,sequence=63813,goal=<null>]"
+          ],
+          "customfield_10038": null,
+          "customfield_15848": null,
+          "customfield_10039": "false",
+          "customfield_15846": null,
+          "customfield_15847": null,
+          "progress": {
+            "progress": 0,
+            "total": 0
+          },
+          "votes": {
+            "self": "https://sapjira.wdf.sap.corp/rest/api/2/issue/GSLOGBRNFE3-3725/votes",
+            "votes": 0,
+            "hasVoted": false
+          },
+          "issuetype": {
+            "self": "https://sapjira.wdf.sap.corp/rest/api/2/issuetype/5",
+            "id": "5",
+            "description": "Task",
+            "iconUrl": "https://sapjira.wdf.sap.corp/secure/viewavatar?size=xsmall&avatarId=27826&avatarType=issuetype",
+            "name": "Task",
+            "subtask": true,
+            "avatarId": 27826
+          },
+          "customfield_15440": null,
+          "customfield_15441": "maintain in CAL Solution Editor",
+          "customfield_10270": "9223372036854775807",
+          "timespent": null,
+          "customfield_10150": null,
+          "customfield_10271": "9223372036854775807",
+          "customfield_15841": null,
+          "project": {
+            "self": "https://sapjira.wdf.sap.corp/rest/api/2/project/43830",
+            "id": "43830",
+            "key": "GSLOGBRNFE3",
+            "name": "GSLOGBRNFE3",
+            "avatarUrls": {
+              "48x48": "https://sapjira.wdf.sap.corp/secure/projectavatar?pid=43830&avatarId=38628",
+              "24x24": "https://sapjira.wdf.sap.corp/secure/projectavatar?size=small&pid=43830&avatarId=38628",
+              "16x16": "https://sapjira.wdf.sap.corp/secure/projectavatar?size=xsmall&pid=43830&avatarId=38628",
+              "32x32": "https://sapjira.wdf.sap.corp/secure/projectavatar?size=medium&pid=43830&avatarId=38628"
+            }
+          },
+          "customfield_15844": null,
+          "aggregatetimespent": null,
+          "customfield_11640": null,
+          "customfield_15845": null,
+          "customfield_10036": null,
+          "customfield_10037": null,
+          "customfield_15843": null,
+          "customfield_10941": null,
+          "customfield_10942": null,
+          "customfield_10943": null,
+          "customfield_10944": null,
+          "customfield_10945": null,
+          "customfield_10946": {
+            "self": "https://sapjira.wdf.sap.corp/rest/api/2/customFieldOption/11185",
+            "value": "Not Set",
+            "id": "11185"
+          },
+          "resolutiondate": null,
+          "customfield_10947": {
+            "self": "https://sapjira.wdf.sap.corp/rest/api/2/customFieldOption/11190",
+            "value": "Yes",
+            "id": "11190"
+          },
+          "customfield_10948": null,
+          "workratio": -1,
+          "customfield_16240": null,
+          "watches": {
+            "self": "https://sapjira.wdf.sap.corp/rest/api/2/issue/GSLOGBRNFE3-3725/watchers",
+            "watchCount": 1,
+            "isWatching": false
+          },
+          "customfield_20341": null,
+          "customfield_16640": null,
+          "created": "2019-02-28T13:39:19.000+0000",
+          "customfield_16241": null,
+          "customfield_18947": null,
+          "customfield_10300": null,
+          "updated": "2019-03-07T17:13:56.000+0000",
+          "customfield_15140": null,
+          "customfield_19740": null,
+          "customfield_15144": "2|i02e1j:",
+          "timeoriginalestimate": null,
+          "customfield_11340": null,
+          "description": "Create a CL_NFE_CLIENT class\r\n\r\nUse ZCL_NFE_CLIENT as a model",
+          "customfield_10130": "2019-02-28",
+          "customfield_15940": null,
+          "customfield_10013": null,
+          "customfield_10005": null,
+          "customfield_10248": null,
+          "summary": "[FIX] Create CL_NFE_CLIENT",
+          "customfield_20040": null,
+          "customfield_12140": null,
+          "customfield_16340": null,
+          "customfield_20041": null,
+          "customfield_10120": null,
+          "customfield_10241": null,
+          "customfield_16740": null,
+          "customfield_10003": {
+            "self": "https://sapjira.wdf.sap.corp/rest/api/2/customFieldOption/10010",
+            "value": "Yes",
+            "id": "10010"
+          },
+          "environment": null,
+          "duedate": null
+        }
+      }
+    ]
+  },
+  {
+    "expand": "names,schema",
+    "startAt": 0,
+    "maxResults": 50,
+    "total": 1,
+    "issues": [
+      {
+        "expand": "operations,versionedRepresentations,editmeta,changelog,renderedFields",
+        "id": "5702813",
+        "self": "https://sapjira.wdf.sap.corp/rest/api/2/issue/5702813",
+        "key": "GSLOGBRNFE3-3579",
+        "fields": {
+          "customfield_17142": null,
+          "customfield_19442": null,
+          "customfield_17141": null,
+          "customfield_19443": null,
+          "parent": {
+            "id": "5799974",
+            "key": "GSLOGBRNFE3-3681",
+            "self": "https://sapjira.wdf.sap.corp/rest/api/2/issue/5799974",
+            "fields": {
+              "summary": "Maintenance Sprint 04 / 2019",
+              "status": {
+                "self": "https://sapjira.wdf.sap.corp/rest/api/2/status/1",
+                "description": "The item is open and ready for the assignee to start work on it.",
+                "iconUrl": "https://sapjira.wdf.sap.corp/images/icons/statuses/open.png",
+                "name": "Open",
+                "id": "1",
+                "statusCategory": {
+                  "self": "https://sapjira.wdf.sap.corp/rest/api/2/statuscategory/2",
+                  "id": 2,
+                  "key": "new",
+                  "colorName": "blue-gray",
+                  "name": "To Do"
+                }
+              },
+              "priority": {
+                "self": "https://sapjira.wdf.sap.corp/rest/api/2/priority/3",
+                "iconUrl": "https://sapjira.wdf.sap.corp/images/icons/priorities/major.svg",
+                "name": "Medium",
+                "id": "3"
+              },
+              "issuetype": {
+                "self": "https://sapjira.wdf.sap.corp/rest/api/2/issuetype/12",
+                "id": "12",
+                "description": "This issue type can be used for tasks, Action Items etc",
+                "iconUrl": "https://sapjira.wdf.sap.corp/secure/viewavatar?size=xsmall&avatarId=27826&avatarType=issuetype",
+                "name": "Activity",
+                "subtask": false,
+                "avatarId": 27826
+              }
+            }
+          },
+          "customfield_17140": null,
+          "customfield_10070": {
+            "self": "https://sapjira.wdf.sap.corp/rest/api/2/customFieldOption/10021",
+            "value": "No",
+            "id": "10021"
+          },
+          "customfield_17146": null,
+          "customfield_10071": {
+            "self": "https://sapjira.wdf.sap.corp/rest/api/2/customFieldOption/10023",
+            "value": "No",
+            "id": "10023"
+          },
+          "customfield_17145": null,
+          "customfield_13340": null,
+          "customfield_17144": null,
+          "customfield_19440": null,
+          "customfield_17143": null,
+          "customfield_19441": null,
+          "customfield_15246": null,
+          "customfield_11441": null,
+          "customfield_15640": null,
+          "fixVersions": [],
+          "customfield_11440": null,
+          "customfield_10111": null,
+          "resolution": null,
+          "customfield_11841": null,
+          "customfield_19040": {
+            "self": "https://sapjira.wdf.sap.corp/rest/api/2/customFieldOption/31061",
+            "value": "No",
+            "id": "31061"
+          },
+          "customfield_19041": null,
+          "customfield_20541": null,
+          "customfield_16041": null,
+          "lastViewed": null,
+          "customfield_16040": null,
+          "customfield_10180": null,
+          "customfield_16442": null,
+          "customfield_10060": null,
+          "customfield_16045": null,
+          "customfield_10061": "2019-01-29",
+          "customfield_16044": null,
+          "customfield_18341": null,
+          "customfield_16842": null,
+          "customfield_16841": null,
+          "customfield_10340": "9223372036854775807",
+          "customfield_16444": null,
+          "customfield_16840": null,
+          "customfield_18748": "Add any other requirements for the API that you might have, e.g. performance expectations: do you want the API to handle batch input? What is the latency you expect?",
+          "customfield_10220": {
+            "self": "https://sapjira.wdf.sap.corp/rest/api/2/customFieldOption/10140",
+            "value": "default",
+            "id": "10140"
+          },
+          "customfield_16443": null,
+          "priority": {
+            "self": "https://sapjira.wdf.sap.corp/rest/api/2/priority/3",
+            "iconUrl": "https://sapjira.wdf.sap.corp/images/icons/priorities/major.svg",
+            "name": "Medium",
+            "id": "3"
+          },
+          "customfield_10221": null,
+          "customfield_10861": null,
+          "labels": [],
+          "customfield_14941": null,
+          "customfield_10852": null,
+          "customfield_10853": null,
+          "customfield_10854": null,
+          "customfield_10855": null,
+          "customfield_10856": null,
+          "aggregatetimeoriginalestimate": null,
+          "timeestimate": null,
+          "versions": [],
+          "customfield_10857": null,
+          "issuelinks": [],
+          "assignee": {
+            "self": "https://sapjira.wdf.sap.corp/rest/api/2/user?username=I820244",
+            "name": "I820244",
+            "key": "i820244",
+            "emailAddress": "rodrigo.buhler@sap.com",
+            "avatarUrls": {
+              "48x48": "https://sapjira.wdf.sap.corp/secure/useravatar?ownerId=i820244&avatarId=51266",
+              "24x24": "https://sapjira.wdf.sap.corp/secure/useravatar?size=small&ownerId=i820244&avatarId=51266",
+              "16x16": "https://sapjira.wdf.sap.corp/secure/useravatar?size=xsmall&ownerId=i820244&avatarId=51266",
+              "32x32": "https://sapjira.wdf.sap.corp/secure/useravatar?size=medium&ownerId=i820244&avatarId=51266"
+            },
+            "displayName": "Buhler, Rodrigo",
+            "active": true,
+            "timeZone": "America/Sao_Paulo"
+          },
+          "status": {
+            "self": "https://sapjira.wdf.sap.corp/rest/api/2/status/10027",
+            "description": "The issue is 'in wait' for a deadline/action item from outside team.",
+            "iconUrl": "https://sapjira.wdf.sap.corp/images/icons/statuses/needinfo.png",
+            "name": "In Waiting",
+            "id": "10027",
+            "statusCategory": {
+              "self": "https://sapjira.wdf.sap.corp/rest/api/2/statuscategory/4",
+              "id": 4,
+              "key": "indeterminate",
+              "colorName": "yellow",
+              "name": "In Progress"
+            }
+          },
+          "components": [],
+          "customfield_10290": null,
+          "customfield_10291": null,
+          "customfield_15340": "maintain in CAL Solution Editor",
+          "customfield_15741": null,
+          "customfield_11540": null,
+          "customfield_10210": "9223372036854775807",
+          "customfield_19942": null,
+          "customfield_10850": null,
+          "customfield_10851": null,
+          "customfield_10842": null,
+          "customfield_10843": null,
+          "customfield_10844": null,
+          "customfield_10845": null,
+          "aggregatetimeestimate": null,
+          "customfield_10846": null,
+          "customfield_10847": {
+            "self": "https://sapjira.wdf.sap.corp/rest/api/2/customFieldOption/10960",
+            "value": "Internal",
+            "id": "10960"
+          },
+          "customfield_10848": null,
+          "customfield_10849": null,
+          "customfield_19140": null,
+          "customfield_16141": null,
+          "customfield_20640": null,
+          "customfield_16140": null,
+          "customfield_18442": null,
+          "creator": {
+            "self": "https://sapjira.wdf.sap.corp/rest/api/2/user?username=I820244",
+            "name": "I820244",
+            "key": "i820244",
+            "emailAddress": "rodrigo.buhler@sap.com",
+            "avatarUrls": {
+              "48x48": "https://sapjira.wdf.sap.corp/secure/useravatar?ownerId=i820244&avatarId=51266",
+              "24x24": "https://sapjira.wdf.sap.corp/secure/useravatar?size=small&ownerId=i820244&avatarId=51266",
+              "16x16": "https://sapjira.wdf.sap.corp/secure/useravatar?size=xsmall&ownerId=i820244&avatarId=51266",
+              "32x32": "https://sapjira.wdf.sap.corp/secure/useravatar?size=medium&ownerId=i820244&avatarId=51266"
+            },
+            "displayName": "Buhler, Rodrigo",
+            "active": true,
+            "timeZone": "America/Sao_Paulo"
+          },
+          "customfield_18840": null,
+          "subtasks": [],
+          "customfield_10161": null,
+          "customfield_16940": null,
+          "reporter": {
+            "self": "https://sapjira.wdf.sap.corp/rest/api/2/user?username=I820244",
+            "name": "I820244",
+            "key": "i820244",
+            "emailAddress": "rodrigo.buhler@sap.com",
+            "avatarUrls": {
+              "48x48": "https://sapjira.wdf.sap.corp/secure/useravatar?ownerId=i820244&avatarId=51266",
+              "24x24": "https://sapjira.wdf.sap.corp/secure/useravatar?size=small&ownerId=i820244&avatarId=51266",
+              "16x16": "https://sapjira.wdf.sap.corp/secure/useravatar?size=xsmall&ownerId=i820244&avatarId=51266",
+              "32x32": "https://sapjira.wdf.sap.corp/secure/useravatar?size=medium&ownerId=i820244&avatarId=51266"
+            },
+            "displayName": "Buhler, Rodrigo",
+            "active": true,
+            "timeZone": "America/Sao_Paulo"
+          },
+          "aggregateprogress": {
+            "progress": 0,
+            "total": 0
+          },
+          "customfield_12740": [
+            "com.atlassian.greenhopper.service.sprint.Sprint@722f55ca[id=68269,rapidViewId=7860,state=ACTIVE,name=Sprint 04 / 2019 (Inbound),startDate=2019-02-26T11:57:44.420Z,endDate=2019-03-15T18:57:00.000Z,completeDate=<null>,sequence=63813,goal=<null>]"
+          ],
+          "customfield_10038": null,
+          "customfield_15848": null,
+          "customfield_10039": "false",
+          "customfield_15846": null,
+          "customfield_15847": null,
+          "progress": {
+            "progress": 0,
+            "total": 0
+          },
+          "votes": {
+            "self": "https://sapjira.wdf.sap.corp/rest/api/2/issue/GSLOGBRNFE3-3579/votes",
+            "votes": 0,
+            "hasVoted": false
+          },
+          "issuetype": {
+            "self": "https://sapjira.wdf.sap.corp/rest/api/2/issuetype/5",
+            "id": "5",
+            "description": "Task",
+            "iconUrl": "https://sapjira.wdf.sap.corp/secure/viewavatar?size=xsmall&avatarId=27826&avatarType=issuetype",
+            "name": "Task",
+            "subtask": true,
+            "avatarId": 27826
+          },
+          "customfield_15440": null,
+          "customfield_15441": "maintain in CAL Solution Editor",
+          "customfield_10270": "9223372036854775807",
+          "timespent": null,
+          "customfield_10150": null,
+          "customfield_10271": "9223372036854775807",
+          "customfield_15841": null,
+          "project": {
+            "self": "https://sapjira.wdf.sap.corp/rest/api/2/project/43830",
+            "id": "43830",
+            "key": "GSLOGBRNFE3",
+            "name": "GSLOGBRNFE3",
+            "avatarUrls": {
+              "48x48": "https://sapjira.wdf.sap.corp/secure/projectavatar?pid=43830&avatarId=38628",
+              "24x24": "https://sapjira.wdf.sap.corp/secure/projectavatar?size=small&pid=43830&avatarId=38628",
+              "16x16": "https://sapjira.wdf.sap.corp/secure/projectavatar?size=xsmall&pid=43830&avatarId=38628",
+              "32x32": "https://sapjira.wdf.sap.corp/secure/projectavatar?size=medium&pid=43830&avatarId=38628"
+            }
+          },
+          "customfield_15844": null,
+          "aggregatetimespent": null,
+          "customfield_11640": null,
+          "customfield_15845": null,
+          "customfield_10036": null,
+          "customfield_10037": null,
+          "customfield_15843": null,
+          "customfield_10941": null,
+          "customfield_10942": null,
+          "customfield_10943": null,
+          "customfield_10944": null,
+          "customfield_10945": null,
+          "customfield_10946": {
+            "self": "https://sapjira.wdf.sap.corp/rest/api/2/customFieldOption/11185",
+            "value": "Not Set",
+            "id": "11185"
+          },
+          "resolutiondate": null,
+          "customfield_10947": {
+            "self": "https://sapjira.wdf.sap.corp/rest/api/2/customFieldOption/11190",
+            "value": "Yes",
+            "id": "11190"
+          },
+          "customfield_10948": null,
+          "workratio": -1,
+          "customfield_16240": null,
+          "watches": {
+            "self": "https://sapjira.wdf.sap.corp/rest/api/2/issue/GSLOGBRNFE3-3579/watchers",
+            "watchCount": 0,
+            "isWatching": false
+          },
+          "customfield_20341": null,
+          "customfield_16640": null,
+          "created": "2019-01-29T13:14:08.000+0000",
+          "customfield_16241": null,
+          "customfield_18947": null,
+          "customfield_10300": null,
+          "updated": "2019-02-25T13:46:19.000+0000",
+          "customfield_15140": null,
+          "customfield_19740": null,
+          "customfield_15144": "2|hzltzz:",
+          "timeoriginalestimate": null,
+          "customfield_11340": null,
+          "description": "Changes report sheet:\r\n\r\n[https://sap-my.sharepoint.com/:x:/p/rodrigo_buhler/EZcHnGPZ_rhKhcZVS9qMO0sBI_iRqdLr8REUv1z17FJTdA?e=R5P7u0]",
+          "customfield_10130": "2019-01-29",
+          "customfield_15940": null,
+          "customfield_10013": null,
+          "customfield_10005": null,
+          "customfield_10248": null,
+          "summary": "Generate test plan for BL´s with SUT 100% ok reate",
+          "customfield_20040": null,
+          "customfield_12140": null,
+          "customfield_16340": null,
+          "customfield_20041": null,
+          "customfield_10120": null,
+          "customfield_10241": null,
+          "customfield_16740": null,
+          "customfield_10003": {
+            "self": "https://sapjira.wdf.sap.corp/rest/api/2/customFieldOption/10010",
+            "value": "Yes",
+            "id": "10010"
+          },
+          "environment": null,
+          "duedate": null
+        }
+      }
+    ]
+  },
+
+  {
+    "expand": "names,schema",
+    "startAt": 0,
+    "maxResults": 50,
+    "total": 1,
+    "issues": [
+      {
+        "expand": "operations,versionedRepresentations,editmeta,changelog,renderedFields",
+        "id": "5661313",
+        "self": "https://sapjira.wdf.sap.corp/rest/api/2/issue/5661313",
+        "key": "GSLOGBRNFE3-3523",
+        "fields": {
+          "customfield_17142": null,
+          "customfield_19442": null,
+          "customfield_17141": null,
+          "customfield_19443": null,
+          "parent": {
+            "id": "5799974",
+            "key": "GSLOGBRNFE3-3681",
+            "self": "https://sapjira.wdf.sap.corp/rest/api/2/issue/5799974",
+            "fields": {
+              "summary": "Maintenance Sprint 04 / 2019",
+              "status": {
+                "self": "https://sapjira.wdf.sap.corp/rest/api/2/status/1",
+                "description": "The item is open and ready for the assignee to start work on it.",
+                "iconUrl": "https://sapjira.wdf.sap.corp/images/icons/statuses/open.png",
+                "name": "Open",
+                "id": "1",
+                "statusCategory": {
+                  "self": "https://sapjira.wdf.sap.corp/rest/api/2/statuscategory/2",
+                  "id": 2,
+                  "key": "new",
+                  "colorName": "blue-gray",
+                  "name": "To Do"
+                }
+              },
+              "priority": {
+                "self": "https://sapjira.wdf.sap.corp/rest/api/2/priority/3",
+                "iconUrl": "https://sapjira.wdf.sap.corp/images/icons/priorities/major.svg",
+                "name": "Medium",
+                "id": "3"
+              },
+              "issuetype": {
+                "self": "https://sapjira.wdf.sap.corp/rest/api/2/issuetype/12",
+                "id": "12",
+                "description": "This issue type can be used for tasks, Action Items etc",
+                "iconUrl": "https://sapjira.wdf.sap.corp/secure/viewavatar?size=xsmall&avatarId=27826&avatarType=issuetype",
+                "name": "Activity",
+                "subtask": false,
+                "avatarId": 27826
+              }
+            }
+          },
+          "customfield_17140": null,
+          "customfield_10070": {
+            "self": "https://sapjira.wdf.sap.corp/rest/api/2/customFieldOption/10021",
+            "value": "No",
+            "id": "10021"
+          },
+          "customfield_17146": null,
+          "customfield_10071": {
+            "self": "https://sapjira.wdf.sap.corp/rest/api/2/customFieldOption/10023",
+            "value": "No",
+            "id": "10023"
+          },
+          "customfield_17145": null,
+          "customfield_13340": null,
+          "customfield_17144": null,
+          "customfield_19440": null,
+          "customfield_17143": null,
+          "customfield_19441": null,
+          "customfield_15246": null,
+          "customfield_11441": null,
+          "customfield_15640": null,
+          "fixVersions": [],
+          "customfield_11440": null,
+          "customfield_10111": null,
+          "resolution": null,
+          "customfield_11841": null,
+          "customfield_19040": {
+            "self": "https://sapjira.wdf.sap.corp/rest/api/2/customFieldOption/31061",
+            "value": "No",
+            "id": "31061"
+          },
+          "customfield_19041": null,
+          "customfield_20541": null,
+          "customfield_16041": null,
+          "lastViewed": null,
+          "customfield_16040": null,
+          "customfield_10180": null,
+          "customfield_16442": null,
+          "customfield_10060": null,
+          "customfield_16045": null,
+          "customfield_10061": "2019-01-17",
+          "customfield_16044": null,
+          "customfield_18341": null,
+          "customfield_16842": null,
+          "customfield_16841": null,
+          "customfield_10340": "9223372036854775807",
+          "customfield_16444": null,
+          "customfield_16840": null,
+          "customfield_18748": "Add any other requirements for the API that you might have, e.g. performance expectations: do you want the API to handle batch input? What is the latency you expect?",
+          "customfield_10220": {
+            "self": "https://sapjira.wdf.sap.corp/rest/api/2/customFieldOption/10140",
+            "value": "default",
+            "id": "10140"
+          },
+          "customfield_16443": null,
+          "priority": {
+            "self": "https://sapjira.wdf.sap.corp/rest/api/2/priority/3",
+            "iconUrl": "https://sapjira.wdf.sap.corp/images/icons/priorities/major.svg",
+            "name": "Medium",
+            "id": "3"
+          },
+          "customfield_10221": null,
+          "customfield_10861": null,
+          "labels": [],
+          "customfield_14941": null,
+          "customfield_10852": null,
+          "customfield_10853": null,
+          "customfield_10854": null,
+          "customfield_10855": null,
+          "customfield_10856": null,
+          "aggregatetimeoriginalestimate": null,
+          "timeestimate": null,
+          "versions": [],
+          "customfield_10857": null,
+          "issuelinks": [],
+          "assignee": {
+            "self": "https://sapjira.wdf.sap.corp/rest/api/2/user?username=I820244",
+            "name": "I820244",
+            "key": "i820244",
+            "emailAddress": "rodrigo.buhler@sap.com",
+            "avatarUrls": {
+              "48x48": "https://sapjira.wdf.sap.corp/secure/useravatar?ownerId=i820244&avatarId=51266",
+              "24x24": "https://sapjira.wdf.sap.corp/secure/useravatar?size=small&ownerId=i820244&avatarId=51266",
+              "16x16": "https://sapjira.wdf.sap.corp/secure/useravatar?size=xsmall&ownerId=i820244&avatarId=51266",
+              "32x32": "https://sapjira.wdf.sap.corp/secure/useravatar?size=medium&ownerId=i820244&avatarId=51266"
+            },
+            "displayName": "Buhler, Rodrigo",
+            "active": true,
+            "timeZone": "America/Sao_Paulo"
+          },
+          "status": {
+            "self": "https://sapjira.wdf.sap.corp/rest/api/2/status/10000",
+            "description": "This Issue is blocked.",
+            "iconUrl": "https://sapjira.wdf.sap.corp/images/icons/statuses/needinfo.png",
+            "name": "Blocked",
+            "id": "10000",
+            "statusCategory": {
+              "self": "https://sapjira.wdf.sap.corp/rest/api/2/statuscategory/2",
+              "id": 2,
+              "key": "new",
+              "colorName": "blue-gray",
+              "name": "To Do"
+            }
+          },
+          "components": [],
+          "customfield_10290": null,
+          "customfield_10291": null,
+          "customfield_15340": "maintain in CAL Solution Editor",
+          "customfield_15741": null,
+          "customfield_11540": null,
+          "customfield_10210": "9223372036854775807",
+          "customfield_19942": null,
+          "customfield_10850": null,
+          "customfield_10851": null,
+          "customfield_10842": null,
+          "customfield_10843": null,
+          "customfield_10844": null,
+          "customfield_10845": null,
+          "aggregatetimeestimate": null,
+          "customfield_10846": null,
+          "customfield_10847": {
+            "self": "https://sapjira.wdf.sap.corp/rest/api/2/customFieldOption/10960",
+            "value": "Internal",
+            "id": "10960"
+          },
+          "customfield_10848": null,
+          "customfield_10849": null,
+          "customfield_19140": null,
+          "customfield_16141": null,
+          "customfield_20640": null,
+          "customfield_16140": null,
+          "customfield_18442": null,
+          "creator": {
+            "self": "https://sapjira.wdf.sap.corp/rest/api/2/user?username=I820244",
+            "name": "I820244",
+            "key": "i820244",
+            "emailAddress": "rodrigo.buhler@sap.com",
+            "avatarUrls": {
+              "48x48": "https://sapjira.wdf.sap.corp/secure/useravatar?ownerId=i820244&avatarId=51266",
+              "24x24": "https://sapjira.wdf.sap.corp/secure/useravatar?size=small&ownerId=i820244&avatarId=51266",
+              "16x16": "https://sapjira.wdf.sap.corp/secure/useravatar?size=xsmall&ownerId=i820244&avatarId=51266",
+              "32x32": "https://sapjira.wdf.sap.corp/secure/useravatar?size=medium&ownerId=i820244&avatarId=51266"
+            },
+            "displayName": "Buhler, Rodrigo",
+            "active": true,
+            "timeZone": "America/Sao_Paulo"
+          },
+          "customfield_18840": null,
+          "subtasks": [],
+          "customfield_10161": null,
+          "customfield_16940": null,
+          "reporter": {
+            "self": "https://sapjira.wdf.sap.corp/rest/api/2/user?username=I820244",
+            "name": "I820244",
+            "key": "i820244",
+            "emailAddress": "rodrigo.buhler@sap.com",
+            "avatarUrls": {
+              "48x48": "https://sapjira.wdf.sap.corp/secure/useravatar?ownerId=i820244&avatarId=51266",
+              "24x24": "https://sapjira.wdf.sap.corp/secure/useravatar?size=small&ownerId=i820244&avatarId=51266",
+              "16x16": "https://sapjira.wdf.sap.corp/secure/useravatar?size=xsmall&ownerId=i820244&avatarId=51266",
+              "32x32": "https://sapjira.wdf.sap.corp/secure/useravatar?size=medium&ownerId=i820244&avatarId=51266"
+            },
+            "displayName": "Buhler, Rodrigo",
+            "active": true,
+            "timeZone": "America/Sao_Paulo"
+          },
+          "aggregateprogress": {
+            "progress": 0,
+            "total": 0
+          },
+          "customfield_12740": [
+            "com.atlassian.greenhopper.service.sprint.Sprint@722f55ca[id=68269,rapidViewId=7860,state=ACTIVE,name=Sprint 04 / 2019 (Inbound),startDate=2019-02-26T11:57:44.420Z,endDate=2019-03-15T18:57:00.000Z,completeDate=<null>,sequence=63813,goal=<null>]"
+          ],
+          "customfield_10038": null,
+          "customfield_15848": null,
+          "customfield_10039": "false",
+          "customfield_15846": null,
+          "customfield_15847": null,
+          "progress": {
+            "progress": 0,
+            "total": 0
+          },
+          "votes": {
+            "self": "https://sapjira.wdf.sap.corp/rest/api/2/issue/GSLOGBRNFE3-3523/votes",
+            "votes": 0,
+            "hasVoted": false
+          },
+          "issuetype": {
+            "self": "https://sapjira.wdf.sap.corp/rest/api/2/issuetype/5",
+            "id": "5",
+            "description": "Task",
+            "iconUrl": "https://sapjira.wdf.sap.corp/secure/viewavatar?size=xsmall&avatarId=27826&avatarType=issuetype",
+            "name": "Task",
+            "subtask": true,
+            "avatarId": 27826
+          },
+          "customfield_15440": null,
+          "customfield_15441": "maintain in CAL Solution Editor",
+          "customfield_10270": "9223372036854775807",
+          "timespent": null,
+          "customfield_10150": null,
+          "customfield_10271": "9223372036854775807",
+          "customfield_15841": null,
+          "project": {
+            "self": "https://sapjira.wdf.sap.corp/rest/api/2/project/43830",
+            "id": "43830",
+            "key": "GSLOGBRNFE3",
+            "name": "GSLOGBRNFE3",
+            "avatarUrls": {
+              "48x48": "https://sapjira.wdf.sap.corp/secure/projectavatar?pid=43830&avatarId=38628",
+              "24x24": "https://sapjira.wdf.sap.corp/secure/projectavatar?size=small&pid=43830&avatarId=38628",
+              "16x16": "https://sapjira.wdf.sap.corp/secure/projectavatar?size=xsmall&pid=43830&avatarId=38628",
+              "32x32": "https://sapjira.wdf.sap.corp/secure/projectavatar?size=medium&pid=43830&avatarId=38628"
+            }
+          },
+          "customfield_15844": null,
+          "aggregatetimespent": null,
+          "customfield_11640": null,
+          "customfield_15845": null,
+          "customfield_10036": null,
+          "customfield_10037": null,
+          "customfield_15843": null,
+          "customfield_10941": null,
+          "customfield_10942": null,
+          "customfield_10943": null,
+          "customfield_10944": null,
+          "customfield_10945": null,
+          "customfield_10946": {
+            "self": "https://sapjira.wdf.sap.corp/rest/api/2/customFieldOption/11185",
+            "value": "Not Set",
+            "id": "11185"
+          },
+          "resolutiondate": null,
+          "customfield_10947": {
+            "self": "https://sapjira.wdf.sap.corp/rest/api/2/customFieldOption/11190",
+            "value": "Yes",
+            "id": "11190"
+          },
+          "customfield_10948": null,
+          "workratio": -1,
+          "customfield_16240": null,
+          "watches": {
+            "self": "https://sapjira.wdf.sap.corp/rest/api/2/issue/GSLOGBRNFE3-3523/watchers",
+            "watchCount": 0,
+            "isWatching": false
+          },
+          "customfield_20341": null,
+          "customfield_16640": null,
+          "created": "2019-01-17T14:52:47.000+0000",
+          "customfield_16241": null,
+          "customfield_18947": null,
+          "customfield_10300": null,
+          "updated": "2019-02-25T13:46:19.000+0000",
+          "customfield_15140": null,
+          "customfield_19740": null,
+          "customfield_15144": "2|hzfqcv:",
+          "timeoriginalestimate": null,
+          "customfield_11340": null,
+          "description": "Define a media/place to describe a list of BAdI´s and Views of eDoc project.\r\n\r\nON GOING\r\n\r\n*Git Wiki´s*\r\n * [https://github.wdf.sap.corp/DCSInboundBR/KnowledgeCenter/tree/master/Documents]\r\n\r\n*[to be done]*\r\n * Both wiki´s shall be reviewed and the information updated. ",
+          "customfield_10130": "2019-01-17",
+          "customfield_15940": null,
+          "customfield_10013": null,
+          "customfield_10005": null,
+          "customfield_10248": null,
+          "summary": "List BAdI´s Views and Maintenace Screens with details",
+          "customfield_20040": null,
+          "customfield_12140": null,
+          "customfield_16340": null,
+          "customfield_20041": null,
+          "customfield_10120": null,
+          "customfield_10241": null,
+          "customfield_16740": null,
+          "customfield_10003": {
+            "self": "https://sapjira.wdf.sap.corp/rest/api/2/customFieldOption/10010",
+            "value": "Yes",
+            "id": "10010"
+          },
+          "environment": null,
+          "duedate": null
+        }
+      }
+    ]
+  },
+  {
+    "expand": "names,schema",
+    "startAt": 0,
+    "maxResults": 50,
+    "total": 1,
+    "issues": [
+      {
+        "expand": "operations,versionedRepresentations,editmeta,changelog,renderedFields",
+        "id": "5785607",
+        "self": "https://sapjira.wdf.sap.corp/rest/api/2/issue/5785607",
+        "key": "GSLOGBRNFE3-3658",
+        "fields": {
+          "customfield_17142": null,
+          "customfield_19442": null,
+          "customfield_17141": null,
+          "customfield_19443": null,
+          "parent": {
+            "id": "5779535",
+            "key": "GSLOGBRNFE3-3649",
+            "self": "https://sapjira.wdf.sap.corp/rest/api/2/issue/5779535",
+            "fields": {
+              "summary": "Technical Note 2018.005 - Technical Responsible [Passos]",
+              "status": {
+                "self": "https://sapjira.wdf.sap.corp/rest/api/2/status/1",
+                "description": "The item is open and ready for the assignee to start work on it.",
+                "iconUrl": "https://sapjira.wdf.sap.corp/images/icons/statuses/open.png",
+                "name": "Open",
+                "id": "1",
+                "statusCategory": {
+                  "self": "https://sapjira.wdf.sap.corp/rest/api/2/statuscategory/2",
+                  "id": 2,
+                  "key": "new",
+                  "colorName": "blue-gray",
+                  "name": "To Do"
+                }
+              },
+              "priority": {
+                "self": "https://sapjira.wdf.sap.corp/rest/api/2/priority/3",
+                "iconUrl": "https://sapjira.wdf.sap.corp/images/icons/priorities/major.svg",
+                "name": "Medium",
+                "id": "3"
+              },
+              "issuetype": {
+                "self": "https://sapjira.wdf.sap.corp/rest/api/2/issuetype/6",
+                "id": "6",
+                "description": "Backlog Item",
+                "iconUrl": "https://sapjira.wdf.sap.corp/images/icons/issuetypes/requirement.png",
+                "name": "Backlog Item",
+                "subtask": false
+              }
+            }
+          },
+          "customfield_17140": null,
+          "customfield_10070": {
+            "self": "https://sapjira.wdf.sap.corp/rest/api/2/customFieldOption/10021",
+            "value": "No",
+            "id": "10021"
+          },
+          "customfield_17146": null,
+          "customfield_10071": {
+            "self": "https://sapjira.wdf.sap.corp/rest/api/2/customFieldOption/10023",
+            "value": "No",
+            "id": "10023"
+          },
+          "customfield_17145": null,
+          "customfield_13340": null,
+          "customfield_17144": null,
+          "customfield_19440": null,
+          "customfield_17143": null,
+          "customfield_19441": null,
+          "customfield_15246": null,
+          "customfield_11441": null,
+          "customfield_15640": null,
+          "fixVersions": [],
+          "customfield_11440": null,
+          "customfield_10111": null,
+          "resolution": {
+            "self": "https://sapjira.wdf.sap.corp/rest/api/2/resolution/10000",
+            "id": "10000",
+            "description": "GreenHopper Managed Resolution",
+            "name": "Done"
+          },
+          "customfield_11841": null,
+          "customfield_19040": {
+            "self": "https://sapjira.wdf.sap.corp/rest/api/2/customFieldOption/31061",
+            "value": "No",
+            "id": "31061"
+          },
+          "customfield_19041": null,
+          "customfield_20541": null,
+          "customfield_16041": null,
+          "lastViewed": null,
+          "customfield_16040": null,
+          "customfield_10180": null,
+          "customfield_16442": null,
+          "customfield_10060": null,
+          "customfield_16045": null,
+          "customfield_10061": "2019-02-20",
+          "customfield_16044": null,
+          "customfield_18341": null,
+          "customfield_16842": null,
+          "customfield_16841": null,
+          "customfield_10340": "9223372036854775807",
+          "customfield_16444": null,
+          "customfield_16840": null,
+          "customfield_18748": "Add any other requirements for the API that you might have, e.g. performance expectations: do you want the API to handle batch input? What is the latency you expect?",
+          "customfield_10220": {
+            "self": "https://sapjira.wdf.sap.corp/rest/api/2/customFieldOption/10140",
+            "value": "default",
+            "id": "10140"
+          },
+          "customfield_16443": null,
+          "priority": {
+            "self": "https://sapjira.wdf.sap.corp/rest/api/2/priority/3",
+            "iconUrl": "https://sapjira.wdf.sap.corp/images/icons/priorities/major.svg",
+            "name": "Medium",
+            "id": "3"
+          },
+          "customfield_10221": null,
+          "customfield_10861": null,
+          "labels": [],
+          "customfield_14941": null,
+          "customfield_10852": null,
+          "customfield_10853": null,
+          "customfield_10854": null,
+          "customfield_10855": null,
+          "customfield_10856": null,
+          "aggregatetimeoriginalestimate": null,
+          "timeestimate": 0,
+          "versions": [],
+          "customfield_10857": null,
+          "issuelinks": [],
+          "assignee": {
+            "self": "https://sapjira.wdf.sap.corp/rest/api/2/user?username=I859306",
+            "name": "I859306",
+            "key": "i859306",
+            "emailAddress": "h.schorr@sap.com",
+            "avatarUrls": {
+              "48x48": "https://sapjira.wdf.sap.corp/secure/useravatar?ownerId=i859306&avatarId=50032",
+              "24x24": "https://sapjira.wdf.sap.corp/secure/useravatar?size=small&ownerId=i859306&avatarId=50032",
+              "16x16": "https://sapjira.wdf.sap.corp/secure/useravatar?size=xsmall&ownerId=i859306&avatarId=50032",
+              "32x32": "https://sapjira.wdf.sap.corp/secure/useravatar?size=medium&ownerId=i859306&avatarId=50032"
+            },
+            "displayName": "Schorr, Henrique",
+            "active": true,
+            "timeZone": "Etc/UTC"
+          },
+          "status": {
+            "self": "https://sapjira.wdf.sap.corp/rest/api/2/status/10004",
+            "description": "This issue has been successfully completed by the team.",
+            "iconUrl": "https://sapjira.wdf.sap.corp/images/icons/statuses/resolved.png",
+            "name": "Completed",
+            "id": "10004",
+            "statusCategory": {
+              "self": "https://sapjira.wdf.sap.corp/rest/api/2/statuscategory/3",
+              "id": 3,
+              "key": "done",
+              "colorName": "green",
+              "name": "Done"
+            }
+          },
+          "components": [],
+          "customfield_10290": null,
+          "customfield_10291": null,
+          "customfield_15340": "maintain in CAL Solution Editor",
+          "customfield_15741": null,
+          "customfield_11540": null,
+          "customfield_10210": "9223372036854775807",
+          "customfield_19942": null,
+          "customfield_10850": null,
+          "customfield_10851": null,
+          "customfield_10842": null,
+          "customfield_10843": null,
+          "customfield_10844": null,
+          "customfield_10845": null,
+          "aggregatetimeestimate": 0,
+          "customfield_10846": null,
+          "customfield_10847": {
+            "self": "https://sapjira.wdf.sap.corp/rest/api/2/customFieldOption/10960",
+            "value": "Internal",
+            "id": "10960"
+          },
+          "customfield_10848": null,
+          "customfield_10849": null,
+          "customfield_19140": null,
+          "customfield_16141": null,
+          "customfield_20640": null,
+          "customfield_16140": null,
+          "customfield_18442": null,
+          "creator": {
+            "self": "https://sapjira.wdf.sap.corp/rest/api/2/user?username=I849314",
+            "name": "I849314",
+            "key": "i849314",
+            "emailAddress": "v.passos@sap.com",
+            "avatarUrls": {
+              "48x48": "https://sapjira.wdf.sap.corp/secure/useravatar?ownerId=i849314&avatarId=50033",
+              "24x24": "https://sapjira.wdf.sap.corp/secure/useravatar?size=small&ownerId=i849314&avatarId=50033",
+              "16x16": "https://sapjira.wdf.sap.corp/secure/useravatar?size=xsmall&ownerId=i849314&avatarId=50033",
+              "32x32": "https://sapjira.wdf.sap.corp/secure/useravatar?size=medium&ownerId=i849314&avatarId=50033"
+            },
+            "displayName": "Passos, Vinicius",
+            "active": true,
+            "timeZone": "America/Sao_Paulo"
+          },
+          "customfield_18840": null,
+          "subtasks": [],
+          "customfield_10161": null,
+          "customfield_16940": null,
+          "reporter": {
+            "self": "https://sapjira.wdf.sap.corp/rest/api/2/user?username=I849314",
+            "name": "I849314",
+            "key": "i849314",
+            "emailAddress": "v.passos@sap.com",
+            "avatarUrls": {
+              "48x48": "https://sapjira.wdf.sap.corp/secure/useravatar?ownerId=i849314&avatarId=50033",
+              "24x24": "https://sapjira.wdf.sap.corp/secure/useravatar?size=small&ownerId=i849314&avatarId=50033",
+              "16x16": "https://sapjira.wdf.sap.corp/secure/useravatar?size=xsmall&ownerId=i849314&avatarId=50033",
+              "32x32": "https://sapjira.wdf.sap.corp/secure/useravatar?size=medium&ownerId=i849314&avatarId=50033"
+            },
+            "displayName": "Passos, Vinicius",
+            "active": true,
+            "timeZone": "America/Sao_Paulo"
+          },
+          "aggregateprogress": {
+            "progress": 0,
+            "total": 0
+          },
+          "customfield_12740": [
+            "com.atlassian.greenhopper.service.sprint.Sprint@722f55ca[id=68269,rapidViewId=7860,state=ACTIVE,name=Sprint 04 / 2019 (Inbound),startDate=2019-02-26T11:57:44.420Z,endDate=2019-03-15T18:57:00.000Z,completeDate=<null>,sequence=63813,goal=<null>]"
+          ],
+          "customfield_10038": null,
+          "customfield_15848": null,
+          "customfield_10039": "false",
+          "customfield_15846": null,
+          "customfield_15847": null,
+          "progress": {
+            "progress": 0,
+            "total": 0
+          },
+          "votes": {
+            "self": "https://sapjira.wdf.sap.corp/rest/api/2/issue/GSLOGBRNFE3-3658/votes",
+            "votes": 0,
+            "hasVoted": false
+          },
+          "issuetype": {
+            "self": "https://sapjira.wdf.sap.corp/rest/api/2/issuetype/5",
+            "id": "5",
+            "description": "Task",
+            "iconUrl": "https://sapjira.wdf.sap.corp/secure/viewavatar?size=xsmall&avatarId=27826&avatarType=issuetype",
+            "name": "Task",
+            "subtask": true,
+            "avatarId": 27826
+          },
+          "customfield_15440": null,
+          "customfield_15441": "maintain in CAL Solution Editor",
+          "customfield_10270": "9223372036854775807",
+          "timespent": null,
+          "customfield_10150": null,
+          "customfield_10271": "9223372036854775807",
+          "customfield_15841": null,
+          "project": {
+            "self": "https://sapjira.wdf.sap.corp/rest/api/2/project/43830",
+            "id": "43830",
+            "key": "GSLOGBRNFE3",
+            "name": "GSLOGBRNFE3",
+            "avatarUrls": {
+              "48x48": "https://sapjira.wdf.sap.corp/secure/projectavatar?pid=43830&avatarId=38628",
+              "24x24": "https://sapjira.wdf.sap.corp/secure/projectavatar?size=small&pid=43830&avatarId=38628",
+              "16x16": "https://sapjira.wdf.sap.corp/secure/projectavatar?size=xsmall&pid=43830&avatarId=38628",
+              "32x32": "https://sapjira.wdf.sap.corp/secure/projectavatar?size=medium&pid=43830&avatarId=38628"
+            }
+          },
+          "customfield_15844": null,
+          "aggregatetimespent": null,
+          "customfield_11640": null,
+          "customfield_15845": null,
+          "customfield_10036": null,
+          "customfield_10037": null,
+          "customfield_15843": null,
+          "customfield_10941": null,
+          "customfield_10942": null,
+          "customfield_10943": null,
+          "customfield_10944": null,
+          "customfield_10945": null,
+          "customfield_10946": {
+            "self": "https://sapjira.wdf.sap.corp/rest/api/2/customFieldOption/11185",
+            "value": "Not Set",
+            "id": "11185"
+          },
+          "resolutiondate": "2019-02-21T12:50:38.000+0000",
+          "customfield_10947": {
+            "self": "https://sapjira.wdf.sap.corp/rest/api/2/customFieldOption/11190",
+            "value": "Yes",
+            "id": "11190"
+          },
+          "customfield_10948": null,
+          "workratio": -1,
+          "customfield_16240": null,
+          "watches": {
+            "self": "https://sapjira.wdf.sap.corp/rest/api/2/issue/GSLOGBRNFE3-3658/watchers",
+            "watchCount": 1,
+            "isWatching": false
+          },
+          "customfield_20341": null,
+          "customfield_16640": null,
+          "created": "2019-02-20T19:48:50.000+0000",
+          "customfield_16241": null,
+          "customfield_18947": null,
+          "customfield_10300": null,
+          "updated": "2019-02-21T12:50:38.000+0000",
+          "customfield_15140": null,
+          "customfield_19740": null,
+          "customfield_15144": "2|hzxx7r:",
+          "timeoriginalestimate": null,
+          "customfield_11340": null,
+          "description": "We should create a new parameter related to the new group: ZD - Technical Responsible), for our Inbound RFC:\r\n * J_1BNFE_IN_CREATE_400\r\n\r\n ",
+          "customfield_10130": "2019-02-20",
+          "customfield_15940": null,
+          "customfield_10013": null,
+          "customfield_10005": null,
+          "customfield_10248": null,
+          "summary": "Create a new parameter related to the new group: ZD - Thecnical Responsible) - J_1BNFE_IN_CREATE_400",
+          "customfield_20040": null,
+          "customfield_12140": null,
+          "customfield_16340": null,
+          "customfield_20041": null,
+          "customfield_10120": null,
+          "customfield_10241": null,
+          "customfield_16740": null,
+          "customfield_10003": {
+            "self": "https://sapjira.wdf.sap.corp/rest/api/2/customFieldOption/10010",
+            "value": "Yes",
+            "id": "10010"
+          },
+          "environment": null,
+          "duedate": null
+        }
+      }
+    ]
+  }
+]

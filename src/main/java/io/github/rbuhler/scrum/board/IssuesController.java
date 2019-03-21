@@ -44,4 +44,32 @@ public class IssuesController {
         }
         return issuesDataList;
     }
+
+    public Issues[] GetIssues( String auth,
+                            String org,
+                           String repo) {
+
+        RestTemplate restTemplate = new RestTemplate();
+        ObjectMapper mapper = new ObjectMapper();
+        String url = "https://api.github.com/repos/" + org + "/" + repo + "/issues";
+
+        //setting the headers
+        HttpHeaders headers = new HttpHeaders();
+        headers.add("Authorization", auth);
+        HttpEntity entity = new HttpEntity(headers);
+        HttpEntity<String> response = restTemplate.exchange(url, HttpMethod.GET, entity, String.class);
+
+        //retrieving the response
+        String jsonData = response.getBody();
+        Issues[] issuesDataList = null;
+
+        try {
+            issuesDataList = mapper.readValue(jsonData, Issues[].class);
+        } catch (IOException e) {
+            System.out.println("\n");
+            e.printStackTrace();
+            System.out.println("\n");
+        }
+        return issuesDataList;
+    }
 }

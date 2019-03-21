@@ -39,6 +39,32 @@ public class OrganizationController {
 		}
         return orgData;
     }
+
+	public Organization getOrganization( String auth,
+									     String org){
+
+		RestTemplate restTemplate = new RestTemplate();
+		ObjectMapper mapper = new ObjectMapper();
+		String url = "https://api.github.com/orgs/" + org;
+
+		//setting the headers
+		HttpHeaders headers = new HttpHeaders();
+		headers.add("Authorization", auth);
+		HttpEntity entity = new HttpEntity(headers);
+		HttpEntity<String> response = restTemplate.exchange(url, HttpMethod.GET, entity, String.class);
+
+		//retrieving the response
+		String jsonData = response.getBody();
+		Organization orgData = null;
+		try {
+			orgData = mapper.readValue(jsonData, Organization.class);
+		} catch (IOException e) {
+			System.out.println("\n");
+			e.printStackTrace();
+			System.out.println("\n");
+		}
+		return orgData;
+	}
 }
 
 /*
@@ -46,4 +72,5 @@ todo
 https://spring.io/guides/gs/rest-service/
 http://localhost:8080/gitOrg?org=javaspringlab
 http://www.jsonschema2pojo.org
+String url = "https://github.wdf.sap.corp/api/v3/orgs/" + org;
  */

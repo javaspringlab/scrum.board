@@ -1,0 +1,88 @@
+  [
+    {
+      "status": {
+        "self": "https://sapjira.wdf.sap.corp/rest/api/2/status/1",
+        "description": "The item is open and ready for the assignee to start work on it.",
+        "iconUrl": "https://sapjira.wdf.sap.corp/images/icons/statuses/open.png",
+        "name": "Open",
+        "id": "1",
+        "statusCategory": {
+          "self": "https://sapjira.wdf.sap.corp/rest/api/2/statuscategory/2",
+          "id": 2,
+          "key": "new",
+          "colorName": "blue-gray",
+          "name": "To Do"
+        }
+      },
+      "status": {
+        "self": "https://sapjira.wdf.sap.corp/rest/api/2/status/3",
+        "description": "This item is being actively worked on at the moment by the assignee.",
+        "iconUrl": "https://sapjira.wdf.sap.corp/images/icons/statuses/inprogress.png",
+        "name": "In Progress",
+        "id": "3",
+        "statusCategory": {
+          "self": "https://sapjira.wdf.sap.corp/rest/api/2/statuscategory/4",
+          "id": 4,
+          "key": "indeterminate",
+          "colorName": "yellow",
+          "name": "In Progress"
+        }
+      },
+      "status": {
+        "self": "https://sapjira.wdf.sap.corp/rest/api/2/status/10029",
+        "description": "The issue can be reviewed by PO/team members.",
+        "iconUrl": "https://sapjira.wdf.sap.corp/images/icons/statuses/inprogress.png",
+        "name": "For Review",
+        "id": "10029",
+        "statusCategory": {
+          "self": "https://sapjira.wdf.sap.corp/rest/api/2/statuscategory/4",
+          "id": 4,
+          "key": "indeterminate",
+          "colorName": "yellow",
+          "name": "In Progress"
+        }
+      },
+      "status": {
+        "self": "https://sapjira.wdf.sap.corp/rest/api/2/status/10027",
+        "description": "The issue is 'in wait' for a deadline/action item from outside team.",
+        "iconUrl": "https://sapjira.wdf.sap.corp/images/icons/statuses/needinfo.png",
+        "name": "In Waiting",
+        "id": "10027",
+        "statusCategory": {
+          "self": "https://sapjira.wdf.sap.corp/rest/api/2/statuscategory/4",
+          "id": 4,
+          "key": "indeterminate",
+          "colorName": "yellow",
+          "name": "In Progress"
+        }
+      },
+      "status": {
+        "self": "https://sapjira.wdf.sap.corp/rest/api/2/status/10000",
+        "description": "This Issue is blocked.",
+        "iconUrl": "https://sapjira.wdf.sap.corp/images/icons/statuses/needinfo.png",
+        "name": "Blocked",
+        "id": "10000",
+        "statusCategory": {
+          "self": "https://sapjira.wdf.sap.corp/rest/api/2/statuscategory/2",
+          "id": 2,
+          "key": "new",
+          "colorName": "blue-gray",
+          "name": "To Do"
+        }
+      },
+      "status": {
+        "self": "https://sapjira.wdf.sap.corp/rest/api/2/status/10004",
+        "description": "This issue has been successfully completed by the team.",
+        "iconUrl": "https://sapjira.wdf.sap.corp/images/icons/statuses/resolved.png",
+        "name": "Completed",
+        "id": "10004",
+        "statusCategory": {
+          "self": "https://sapjira.wdf.sap.corp/rest/api/2/statuscategory/3",
+          "id": 3,
+          "key": "done",
+          "colorName": "green",
+          "name": "Done"
+        }
+      }
+    }
+  ]
