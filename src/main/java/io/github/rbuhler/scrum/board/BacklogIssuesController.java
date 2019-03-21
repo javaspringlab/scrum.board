@@ -2,59 +2,52 @@ package io.github.rbuhler.scrum.board;
 
 import model.board.BacklogIssues;
 import model.github.Issues;
-import model.github.Organization;
-import model.github.Repository;
 import org.springframework.web.bind.annotation.RequestHeader;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
+import java.util.ArrayList;
+
 @RestController
 public class BacklogIssuesController {
 
     @RequestMapping("/backlogIssueList")
-    public BacklogIssues[] backlogissues(@RequestHeader(value="Authorization") String auth,
+    public ArrayList<BacklogIssues> backlogissues(@RequestHeader(value="Authorization") String auth,
                                                    @RequestParam(value="org") String org,
                                                    @RequestParam (value="repo") String repo) {
 
-
-        OrganizationController organization = new OrganizationController();
-        RepositoryController repository = new RepositoryController();
         IssuesController issues = new IssuesController();
-
-        Organization orgData = new Organization();
-        Repository repoData  = new Repository();
         Issues[] issuesData  = null;
+        BacklogIssues blIssue = null;
+        ArrayList<BacklogIssues> blIssueLIst = new ArrayList<BacklogIssues>();
 
-        BacklogIssues[] blIssueLIst = null;
-
-        orgData = organization.getOrganization(auth, org);
-        repoData = repository.getRepo(auth, org,repo);
         issuesData = issues.GetIssues(auth, org, repo);
-
         int countIssues;
         countIssues = issuesData.length;
 
-        for(int i=0; i <= countIssues; i++){
+        for(int i=0; i < countIssues; i++){
             // Result Mapping
-            blIssueLIst[i].setOrgId("");
-            blIssueLIst[i].setRepoId("");
-            blIssueLIst[i].setId(0);
-            blIssueLIst[i].setUrl("");
-            blIssueLIst[i].setTitle("");
-            blIssueLIst[i].setUserLogin(""); /* user": { "login */
-            blIssueLIst[i].setUserHtml(""); /* html_url */
-            blIssueLIst[i].setLabels(null); /* [ ] */
-            blIssueLIst[i].setState("");
-            blIssueLIst[i].setAssignee(null);
-            blIssueLIst[i].setAssignees(null); /* [ ] */
-            blIssueLIst[i].setMilestone(""); /* [ ] */
-            blIssueLIst[i].setComments(0); /* index of how many */
-            blIssueLIst[i].setCreatedAt("");
-            blIssueLIst[i].setUpdatedAt("");
-            blIssueLIst[i].setBody("");
+            blIssue = new BacklogIssues();
+            blIssue.setOrgId(org);
+            blIssue.setRepoId(repo);
+            blIssue.setId(issuesData[i].getNumber());
+            blIssue.setUrl(issuesData[i].getHtmlUrl());
+            blIssue.setTitle(issuesData[i].getTitle());
+            blIssue.setUserLogin(issuesData[i].getUser().getLogin());
+            blIssue.setUserHtml(issuesData[i].getUser().getHtmlUrl());
+            blIssue.setLabels(issuesData[i].getLabels());
+            blIssue.setState(issuesData[i].getState());
+            blIssue.setAssignee(issuesData[i].getAssignee());
+            blIssue.setAssignees(issuesData[i].getAssignees());
+            blIssue.setMilestone(issuesData[i].getMilestone());
+            blIssue.setComments(issuesData[i].getComments());
+            blIssue.setCreatedAt(issuesData[i].getCreatedAt());
+            blIssue.setUpdatedAt(issuesData[i].getUpdatedAt());
+            blIssue.setBody(issuesData[i].getBody());
+
+            blIssueLIst.add(blIssue);
         }
         return blIssueLIst;
     }
-
 }
