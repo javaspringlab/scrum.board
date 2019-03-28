@@ -2,6 +2,7 @@ package model.board;
 
 import com.fasterxml.jackson.annotation.*;
 import model.github.Assignee;
+import model.github.Issue;
 import model.github.Label;
 import model.github.User;
 
@@ -11,19 +12,20 @@ import java.util.Map;
 
 @JsonInclude(JsonInclude.Include.NON_NULL)
 @JsonPropertyOrder({
-        "orgId", /* "login": "javaspringlab" */
-        "repoId",  /* "name": "scrum.board" */
-        "id", /* "number": 2 */
+        "orgId",
+        "repoId",
+        "issueType",
+        "id",
         "url",
         "title",
-        "userLogin", /* user": { "login */
-        "userHtml", /* html_url */
-        "labels", /* [ ] */
+        "userLogin",
+        "userHtml",
+        "labels",
         "state",
         "assignee",
-        "assignees", /* [ ] */
-        "milestone", /* [ ] */
-        "comments", /* index of how many */
+        "assignees",
+        "milestone",
+        "comments",
         "created_at",
         "updated_at",
         "body",
@@ -35,6 +37,8 @@ public class BacklogIssues {
     private String orgId;
     @JsonProperty("repoId")
     private String repoId;
+    @JsonProperty("issueType")
+    private IssueType issueType;
     @JsonProperty("id")
     private int id;
     @JsonProperty("url")
@@ -69,9 +73,10 @@ public class BacklogIssues {
     public BacklogIssues() {
     }
 
-    public BacklogIssues(String orgId, String repoId, int id, String url, String title, String userLogin, String userHtml, List<Label> labels, String state, Assignee assignee, List<Assignee> assignees, Object milestone, int comments, String createdAt, String updatedAt, String body ) {
+    public BacklogIssues(String orgId, String repoId, IssueType issueType, int id, String url, String title, String userLogin, String userHtml, List<Label> labels, String state, Assignee assignee, List<Assignee> assignees, Object milestone, int comments, String createdAt, String updatedAt, String body ) {
         this.orgId = orgId;
         this.repoId = repoId;
+        this.issueType = issueType;
         this.id = id;
         this.url = url;
         this.title = title;
@@ -102,6 +107,14 @@ public class BacklogIssues {
 
     public void setRepoId(String repoId) {
         this.repoId = repoId;
+    }
+
+    public IssueType getIssueType() {
+        return issueType;
+    }
+
+    public void setIssueType(IssueType issueType) {
+        this.issueType = issueType;
     }
 
     public int getId() {

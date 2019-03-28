@@ -35,7 +35,7 @@ public class Owner {
     @JsonProperty("login")
     private String login;
     @JsonProperty("id")
-    private int id;
+    private long id;
     @JsonProperty("node_id")
     private String nodeId;
     @JsonProperty("avatar_url")
@@ -99,7 +99,7 @@ public class Owner {
      * @param login
      * @param starredUrl
      */
-    public Owner(String login, int id, String nodeId, String avatarUrl, String gravatarId, String url, String htmlUrl, String followersUrl, String followingUrl, String gistsUrl, String starredUrl, String subscriptionsUrl, String organizationsUrl, String reposUrl, String eventsUrl, String receivedEventsUrl, String type, boolean siteAdmin) {
+    public Owner(String login, long id, String nodeId, String avatarUrl, String gravatarId, String url, String htmlUrl, String followersUrl, String followingUrl, String gistsUrl, String starredUrl, String subscriptionsUrl, String organizationsUrl, String reposUrl, String eventsUrl, String receivedEventsUrl, String type, boolean siteAdmin) {
         super();
         this.login = login;
         this.id = id;
@@ -132,12 +132,12 @@ public class Owner {
     }
 
     @JsonProperty("id")
-    public int getId() {
+    public long getId() {
         return id;
     }
 
     @JsonProperty("id")
-    public void setId(int id) {
+    public void setId(long id) {
         this.id = id;
     }
 

@@ -15,7 +15,6 @@ import java.io.IOException;
 
 @RestController
 public class IssuesController {
-
     @RequestMapping("/gitIssuesList")
     public Issues[] issues(@RequestHeader (value="Authorization") String auth,
                            @RequestParam(value="org") String org,

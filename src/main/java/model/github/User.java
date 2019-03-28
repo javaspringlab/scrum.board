@@ -1,9 +1,13 @@
 package model.github;
 
-import com.fasterxml.jackson.annotation.*;
-
 import java.util.HashMap;
 import java.util.Map;
+import com.fasterxml.jackson.annotation.JsonAnyGetter;
+import com.fasterxml.jackson.annotation.JsonAnySetter;
+import com.fasterxml.jackson.annotation.JsonIgnore;
+import com.fasterxml.jackson.annotation.JsonInclude;
+import com.fasterxml.jackson.annotation.JsonProperty;
+import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 
 @JsonInclude(JsonInclude.Include.NON_NULL)
 @JsonPropertyOrder({
@@ -31,7 +35,7 @@ public class User {
     @JsonProperty("login")
     private String login;
     @JsonProperty("id")
-    private int id;
+    private long id;
     @JsonProperty("node_id")
     private String nodeId;
     @JsonProperty("avatar_url")
@@ -95,7 +99,7 @@ public class User {
      * @param login
      * @param starredUrl
      */
-    public User(String login, int id, String nodeId, String avatarUrl, String gravatarId, String url, String htmlUrl, String followersUrl, String followingUrl, String gistsUrl, String starredUrl, String subscriptionsUrl, String organizationsUrl, String reposUrl, String eventsUrl, String receivedEventsUrl, String type, boolean siteAdmin) {
+    public User(String login, long id, String nodeId, String avatarUrl, String gravatarId, String url, String htmlUrl, String followersUrl, String followingUrl, String gistsUrl, String starredUrl, String subscriptionsUrl, String organizationsUrl, String reposUrl, String eventsUrl, String receivedEventsUrl, String type, boolean siteAdmin) {
         super();
         this.login = login;
         this.id = id;
@@ -128,12 +132,12 @@ public class User {
     }
 
     @JsonProperty("id")
-    public int getId() {
+    public long getId() {
         return id;
     }
 
     @JsonProperty("id")
-    public void setId(int id) {
+    public void setId(long id) {
         this.id = id;
     }
 
